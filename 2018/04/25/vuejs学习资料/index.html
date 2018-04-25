@@ -1,0 +1,470 @@
+
+ <!DOCTYPE HTML>
+<html >
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Vue.js学习资料集（持续更新中） | YOYO&#39;s blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="王媛">
+    
+
+    
+    <meta name="description" content="版权声明： 转自 SkyeTang http://blog.csdn.net/skyetang/article/details/51823876 最近为了能快速进入工作状态，找了许多学习vue.js的资料。。唉~坚持就是胜利！！！   一、资源类 二、社区 三、组件 四、开发工具 五、优秀项目 六、优秀文章教程   一、资源类文档 vue官方文档[http://cn.vuejs.org/]vue">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue.js学习资料集（持续更新中）">
+<meta property="og:url" content="http://yoursite.com/2018/04/25/vuejs学习资料/index.html">
+<meta property="og:site_name" content="YOYO&#39;s blog">
+<meta property="og:description" content="版权声明： 转自 SkyeTang http://blog.csdn.net/skyetang/article/details/51823876 最近为了能快速进入工作状态，找了许多学习vue.js的资料。。唉~坚持就是胜利！！！   一、资源类 二、社区 三、组件 四、开发工具 五、优秀项目 六、优秀文章教程   一、资源类文档 vue官方文档[http://cn.vuejs.org/]vue">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2016-11-27T11:39:21.131Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Vue.js学习资料集（持续更新中）">
+<meta name="twitter:description" content="版权声明： 转自 SkyeTang http://blog.csdn.net/skyetang/article/details/51823876 最近为了能快速进入工作状态，找了许多学习vue.js的资料。。唉~坚持就是胜利！！！   一、资源类 二、社区 三、组件 四、开发工具 五、优秀项目 六、优秀文章教程   一、资源类文档 vue官方文档[http://cn.vuejs.org/]vue">
+
+    
+    <link rel="alternative" href="/atom.xml" title="YOYO&#39;s blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="YOYO&#39;s blog" title="YOYO&#39;s blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="YOYO&#39;s blog">YOYO&#39;s blog</a></h1>
+				<h2 class="blog-motto">我的小博客</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="hidden" name="q" value="site:yoursite.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2018/04/25/vuejs学习资料/" title="Vue.js学习资料集（持续更新中）" itemprop="url">Vue.js学习资料集（持续更新中）</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="王媛" target="_blank" itemprop="author">王媛</a>
+		
+  <p class="article-time">
+    <time datetime="2018-04-25T07:23:11.377Z" itemprop="datePublished"> Published 2018-04-25</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、资源类"><span class="toc-number">1.</span> <span class="toc-text">一、资源类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、社区"><span class="toc-number">2.</span> <span class="toc-text">二、社区</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、组件"><span class="toc-number">3.</span> <span class="toc-text">三、组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、开发工具"><span class="toc-number">4.</span> <span class="toc-text">四、开发工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五、优秀项目"><span class="toc-number">5.</span> <span class="toc-text">五、优秀项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#六、优秀文章教程"><span class="toc-number">6.</span> <span class="toc-text">六、优秀文章教程</span></a></li></ol>
+		
+		</div>
+		
+		<hr>
+<p>版权声明： 转自 SkyeTang <a href="http://blog.csdn.net/skyetang/article/details/51823876" target="_blank" rel="noopener">http://blog.csdn.net/skyetang/article/details/51823876</a></p>
+<p>最近为了能快速进入工作状态，找了许多学习vue.js的资料。。唉~坚持就是胜利！！！</p>
+<blockquote>
+<ul>
+<li>一、资源类</li>
+<li>二、社区</li>
+<li>三、组件</li>
+<li>四、开发工具</li>
+<li>五、优秀项目</li>
+<li>六、优秀文章教程</li>
+</ul>
+</blockquote>
+<h2 id="一、资源类"><a href="#一、资源类" class="headerlink" title="一、资源类"></a>一、资源类</h2><p>文档</p>
+<p>vue官方文档[<a href="http://cn.vuejs.org/]" target="_blank" rel="noopener">http://cn.vuejs.org/]</a><br>vue论坛[<a href="http://http//forum.vuejs.org/]" target="_blank" rel="noopener">http://http//forum.vuejs.org/]</a></p>
+<p>视频教程<br>vue1.0入门教程[<a href="https://laravist.com/series/vue-js-1-0-in-action-series]" target="_blank" rel="noopener">https://laravist.com/series/vue-js-1-0-in-action-series]</a><br>台湾小凡视频教程[<a href="https://github.com/bhnddowinf/vuejs-learn]" target="_blank" rel="noopener">https://github.com/bhnddowinf/vuejs-learn]</a></p>
+<hr>
+<h2 id="二、社区"><a href="#二、社区" class="headerlink" title="二、社区"></a>二、社区</h2><p>segmentfault-vue[<a href="https://segmentfault.com/t/vue.js]" target="_blank" rel="noopener">https://segmentfault.com/t/vue.js]</a><br>知乎-vue[<a href="https://www.zhihu.com/topic/20022242/questions]" target="_blank" rel="noopener">https://www.zhihu.com/topic/20022242/questions]</a></p>
+<hr>
+<h2 id="三、组件"><a href="#三、组件" class="headerlink" title="三、组件"></a>三、组件</h2><p>1、官方组件</p>
+<p>Loader<br>html-loader-for-webpack[<a href="https://github.com/vuejs/vue-html-loader]" target="_blank" rel="noopener">https://github.com/vuejs/vue-html-loader]</a><br>Router<br>vue-router-demo[<a href="https://github.com/lazyhero/vue-spa-demo]" target="_blank" rel="noopener">https://github.com/lazyhero/vue-spa-demo]</a><br>vue-router文档[<a href="http://router.vuejs.org/zh-cn/index.html]" target="_blank" rel="noopener">http://router.vuejs.org/zh-cn/index.html]</a><br>Vuex（专门为 Vue.js 应用设计的状态管理架构）<br>vuex文档[<a href="http://vuex.vuejs.org/zh-cn/intro.html]" target="_blank" rel="noopener">http://vuex.vuejs.org/zh-cn/intro.html]</a><br>Ajax<br>vue-async-data[<a href="https://github.com/vuejs/vue-async-data]" target="_blank" rel="noopener">https://github.com/vuejs/vue-async-data]</a><br>Vue-cli（快速搭建vue项目）<br>vue-cli[<a href="https://github.com/vuejs/vue-cli]" target="_blank" rel="noopener">https://github.com/vuejs/vue-cli]</a><br>2、其它组件</p>
+<p>UI组件<br>mint-ui：移动端组件[<a href="https://github.com/ElemeFE/mint-ui]" target="_blank" rel="noopener">https://github.com/ElemeFE/mint-ui]</a><br>vux：基于vue与weui的移动端UI组件[<a href="https://github.com/airyland/vux]" target="_blank" rel="noopener">https://github.com/airyland/vux]</a><br>vue-weui[<a href="https://github.com/aidenzou/vue-weui]" target="_blank" rel="noopener">https://github.com/aidenzou/vue-weui]</a><br>Lazyload<br>图片懒加载[<a href="https://github.com/hilongjw/vue-lazyload]" target="_blank" rel="noopener">https://github.com/hilongjw/vue-lazyload]</a><br>Drag<br>vue-drag and drop[<a href="https://github.com/james2doyle/vue-drag-and-drop]" target="_blank" rel="noopener">https://github.com/james2doyle/vue-drag-and-drop]</a><br>Infinite无限加载<br>vue-infinite-load[<a href="https://github.com/ElemeFE/vue-infinite-scroll]" target="_blank" rel="noopener">https://github.com/ElemeFE/vue-infinite-scroll]</a></p>
+<hr>
+<h2 id="四、开发工具"><a href="#四、开发工具" class="headerlink" title="四、开发工具"></a>四、开发工具</h2><p>Vue-devtools[<a href="https://github.com/vuejs/vue-devtools]" target="_blank" rel="noopener">https://github.com/vuejs/vue-devtools]</a></p>
+<hr>
+<h2 id="五、优秀项目"><a href="#五、优秀项目" class="headerlink" title="五、优秀项目"></a>五、优秀项目</h2><p>青城 [<a href="https://github.com/zerqu/qingcheng]" target="_blank" rel="noopener">https://github.com/zerqu/qingcheng]</a><br>vue-blog[<a href="https://github.com/V-Tom/vue-blog]" target="_blank" rel="noopener">https://github.com/V-Tom/vue-blog]</a></p>
+<hr>
+<h2 id="六、优秀文章教程"><a href="#六、优秀文章教程" class="headerlink" title="六、优秀文章教程"></a>六、优秀文章教程</h2><p>Vue.js 快速入门[<a href="https://segmentfault.com/a/1190000003968020]" target="_blank" rel="noopener">https://segmentfault.com/a/1190000003968020]</a><br>基于vue和webpack的chat项目[<a href="https://segmentfault.com/a/1190000003630417]" target="_blank" rel="noopener">https://segmentfault.com/a/1190000003630417]</a><br>Vue + webpack 项目实践【顶】[<a href="http://jiongks.name/blog/just-vue/]" target="_blank" rel="noopener">http://jiongks.name/blog/just-vue/]</a><br>使用node+vue.js实现SPA应用[<a href="https://segmentfault.com/a/1190000004372736]" target="_blank" rel="noopener">https://segmentfault.com/a/1190000004372736]</a></p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2018/04/25/vuejs学习资料/" data-title="Vue.js学习资料集（持续更新中） | YOYO&#39;s blog" data-tsina="" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2018/04/25/webpack/" title="webpack的搭建">
+  <strong>上一篇：</strong><br/>
+  <span>
+  webpack的搭建</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2018/04/25/translate/"  title="">
+ <strong>下一篇：</strong><br/> 
+ <span>(no title)
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、资源类"><span class="toc-number">1.</span> <span class="toc-text">一、资源类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、社区"><span class="toc-number">2.</span> <span class="toc-text">二、社区</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、组件"><span class="toc-number">3.</span> <span class="toc-text">三、组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、开发工具"><span class="toc-number">4.</span> <span class="toc-text">四、开发工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五、优秀项目"><span class="toc-number">5.</span> <span class="toc-text">五、优秀项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#六、优秀文章教程"><span class="toc-number">6.</span> <span class="toc-text">六、优秀文章教程</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+
+
+  
+
+  
+
+  <div class="linkslist">
+  <p class="asidetitle">Links</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://blog.yoyoyuan.top" target="_blank" title="YOYO&#39;s Blog">YOYO&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">Weibo</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=&verifier=b3593ceb&dpc=1"></iframe>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m YOYO . <br/>
+			This is my blog,believe it or not.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/5239740827" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2018 
+		
+		<a href="/about" target="_blank" title="王媛">王媛</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>

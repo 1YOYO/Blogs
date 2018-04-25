@@ -1,0 +1,559 @@
+
+ <!DOCTYPE HTML>
+<html >
+<head>
+  <meta charset="UTF-8">
+  
+    <title>js超基础 | YOYO&#39;s blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="王媛">
+    
+
+    
+    <meta name="description" content="突然发现对js的一些细节知识点记忆几乎遗忘，所以从今天开始我想从新把js基础给过一边，来来巩固一下。   JavaScript和ECMAScript的关系 程序书写的位置、简单语句 类型、值、变量 表达式、运算符     一、JavaScript和ECMAScript的关系 对于他们的比较，只要知道一句就好了：简单来说ECMAScript不是一门语言，而是一个标准，是js的一个标准。而javasc">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js超基础">
+<meta property="og:url" content="http://yoursite.com/2018/04/25/js基础1/index.html">
+<meta property="og:site_name" content="YOYO&#39;s blog">
+<meta property="og:description" content="突然发现对js的一些细节知识点记忆几乎遗忘，所以从今天开始我想从新把js基础给过一边，来来巩固一下。   JavaScript和ECMAScript的关系 程序书写的位置、简单语句 类型、值、变量 表达式、运算符     一、JavaScript和ECMAScript的关系 对于他们的比较，只要知道一句就好了：简单来说ECMAScript不是一门语言，而是一个标准，是js的一个标准。而javasc">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2016-10-26T06:10:41.025Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="js超基础">
+<meta name="twitter:description" content="突然发现对js的一些细节知识点记忆几乎遗忘，所以从今天开始我想从新把js基础给过一边，来来巩固一下。   JavaScript和ECMAScript的关系 程序书写的位置、简单语句 类型、值、变量 表达式、运算符     一、JavaScript和ECMAScript的关系 对于他们的比较，只要知道一句就好了：简单来说ECMAScript不是一门语言，而是一个标准，是js的一个标准。而javasc">
+
+    
+    <link rel="alternative" href="/atom.xml" title="YOYO&#39;s blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="YOYO&#39;s blog" title="YOYO&#39;s blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="YOYO&#39;s blog">YOYO&#39;s blog</a></h1>
+				<h2 class="blog-motto">我的小博客</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="hidden" name="q" value="site:yoursite.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2018/04/25/js基础1/" title="js超基础" itemprop="url">js超基础</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="王媛" target="_blank" itemprop="author">王媛</a>
+		
+  <p class="article-time">
+    <time datetime="2018-04-25T07:23:11.359Z" itemprop="datePublished"> Published 2018-04-25</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、JavaScript和ECMAScript的关系"><span class="toc-number">1.</span> <span class="toc-text">一、JavaScript和ECMAScript的关系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对于他们的比较，只要知道一句就好了：简单来说ECMAScript不是一门语言，而是一个标准，是js的一个标准。而javascript是一种轻量级语言。"><span class="toc-number">2.</span> <span class="toc-text">对于他们的比较，只要知道一句就好了：简单来说ECMAScript不是一门语言，而是一个标准，是js的一个标准。而javascript是一种轻量级语言。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、程序书写的位置、简单语句"><span class="toc-number">3.</span> <span class="toc-text">二、程序书写的位置、简单语句</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1程序书写的位置"><span class="toc-number">3.1.</span> <span class="toc-text">2.1程序书写的位置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2简单语句"><span class="toc-number">3.2.</span> <span class="toc-text">2.2简单语句</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、-类型、值、变量"><span class="toc-number">4.</span> <span class="toc-text">三、 类型、值、变量</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1类型"><span class="toc-number">4.1.</span> <span class="toc-text">3.1类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#隐式类型转换"><span class="toc-number">4.2.</span> <span class="toc-text">隐式类型转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#强制类型转换"><span class="toc-number">4.3.</span> <span class="toc-text">强制类型转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2变量"><span class="toc-number">4.4.</span> <span class="toc-text">3.2变量</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、语句"><span class="toc-number">5.</span> <span class="toc-text">四、语句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#扩展小知识点-序列化和反序列化"><span class="toc-number">6.</span> <span class="toc-text">(扩展小知识点)序列化和反序列化</span></a></li></ol>
+		
+		</div>
+		
+		<p>突然发现对js的一些细节知识点记忆几乎遗忘，所以从今天开始我想从新<br>把js基础给过一边，来来巩固一下。</p>
+<blockquote>
+<ul>
+<li>JavaScript和ECMAScript的关系</li>
+<li>程序书写的位置、简单语句</li>
+<li>类型、值、变量</li>
+<li>表达式、运算符</li>
+</ul>
+</blockquote>
+<hr>
+<blockquote>
+<h2 id="一、JavaScript和ECMAScript的关系"><a href="#一、JavaScript和ECMAScript的关系" class="headerlink" title="一、JavaScript和ECMAScript的关系"></a>一、JavaScript和ECMAScript的关系</h2></blockquote>
+<h2 id="对于他们的比较，只要知道一句就好了：简单来说ECMAScript不是一门语言，而是一个标准，是js的一个标准。而javascript是一种轻量级语言。"><a href="#对于他们的比较，只要知道一句就好了：简单来说ECMAScript不是一门语言，而是一个标准，是js的一个标准。而javascript是一种轻量级语言。" class="headerlink" title="对于他们的比较，只要知道一句就好了：简单来说ECMAScript不是一门语言，而是一个标准，是js的一个标准。而javascript是一种轻量级语言。"></a>对于他们的比较，只要知道一句就好了：简单来说ECMAScript不是一门语言，而是一个标准，是js的一个标准。而javascript是一种轻量级语言。</h2><blockquote>
+<h2 id="二、程序书写的位置、简单语句"><a href="#二、程序书写的位置、简单语句" class="headerlink" title="二、程序书写的位置、简单语句"></a>二、程序书写的位置、简单语句</h2></blockquote>
+<h3 id="2-1程序书写的位置"><a href="#2-1程序书写的位置" class="headerlink" title="2.1程序书写的位置"></a><strong><em>2.1程序书写的位置</em></strong></h3><ol>
+<li><p>行内式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;button onclick=&quot;alert(&apos;你好吗&apos;)&quot;&gt;点击我&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+<p> 一般情况，单双引号是一样的,但是出现了包裹的情况,所以要严格处理这种情况，我们一般采取的是 外双内单的格式。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;javascript:void(0);&quot;&gt;&lt;/a&gt;  // 防止跳转</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>内联式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;&lt;/script&gt;  //任何一个地方</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>最好放在body标签下面，否则会出现加载顺序的问题。如果要写在head标签里的话需要些一个入口函数：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">      window.onload = function()&#123; </span><br><span class="line">          alert(&quot;hello&quot;)</span><br><span class="line">      &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+<ol start="3">
+<li>外链式：<br>另外建立一个文件，然后以.js为后缀名，里面放你要写的js代码。然后再html里面引入一下代码：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=”text/javascript” src=”js的路径.js”&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="2-2简单语句"><a href="#2-2简单语句" class="headerlink" title="2.2简单语句"></a><strong><em>2.2简单语句</em></strong></h3><ol>
+<li>alert（）语句：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">    &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">  window.alert(&quot;今天真好&quot;);</span><br><span class="line">        /* 这里说明一下window是可以省略的 */</span><br><span class="line">&lt;/script&gt;    /*（内联式）*/</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>这是一个弹出框语句，打开页面后，会有一个弹出框。alert就是英语里面的“警报”的意思，用途就是弹出“警告框”。</p>
+<ol start="2">
+<li>prompt（）语句：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">  &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">  var a = prompt(&quot;请输入&quot;);</span><br><span class="line">  alert(a);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>prompt就是专门用来弹出能够让用户输入的对话框</p>
+<ol start="3">
+<li><p>confirm（）</p>
+<p>comfirm(“你好吗？”);//消息对话框通常用于允许用户做选择的动作<br>消息对话框通常用于允许用户做选择的动作，点击确定，返回true,点击返回，返回false.</p>
+</li>
+<li>console控制台输出</li>
+</ol>
+<p>Console.log() 控制台输出 普通输出语句<br>Console.warn()  控制台警示<br>Console.error() 控制台错误提示<br>Console.info()  一般<br>Console.debug() 除错信息</p>
+<ol start="5">
+<li>document.write()<br>document.write()直接在HTML文档中写入内容并显示</li>
+</ol>
+<hr>
+<blockquote>
+<h2 id="三、-类型、值、变量"><a href="#三、-类型、值、变量" class="headerlink" title="三、 类型、值、变量"></a>三、 类型、值、变量</h2></blockquote>
+<h3 id="3-1类型"><a href="#3-1类型" class="headerlink" title="3.1类型"></a><strong><em>3.1类型</em></strong></h3><ol>
+<li><ul>
+<li><p>简单的数据类型：</p>
+<ul>
+<li>number     数字类型       </li>
+<li>string     字符串类型     </li>
+<li><p>boolean    布尔类型  </p>
+</li>
+<li><p>undefined<br>在使用var声明变量，但未对其加以初始化时，这个变量的类型就是undefined，且其默认初始化值为undefined。<br>对未声明与初始化的变量，直接使用，那么这个变量的类型也是undefined，但是没有默认初始化值。</p>
+</li>
+<li>null<br>null类型的默认值是null，从逻辑角度讲，是表示一个空对象指针。<br>js高级程序上有讲到，undefined类型是派生自null的，不严格的说二者都是指没有明确赋值的类型，但是细分之后，undefined类型，被用来形容未经初始化的变量，null类型被用来形容空对象指针。<br>所以，如果定义的变量准备在将来用于保存对象（即复杂的数据类型object），那么就该将该变量初始化为null。<br>区分，当一个变量声明后，未初始化，则该值为undefined，如果这个值是为了保存对象，则修改其默认初始化的值，改为null。 所以当检测其类型时，会显示类型为object。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>文／Miss____Du（简书作者）<br>原文链接：<a href="http://www.jianshu.com/p/4841fcc6b4e7" target="_blank" rel="noopener">http://www.jianshu.com/p/4841fcc6b4e7</a><br>著作权归作者所有，转载请联系作者获得授权，并标注“简书作者”。</p>
+<pre><code>* 复杂的数据类型
+ * object   对象
+</code></pre><ol start="2">
+<li>数据类型转换：<h3 id="隐式类型转换"><a href="#隐式类型转换" class="headerlink" title="隐式类型转换"></a>隐式类型转换</h3> 数字–&gt;字符串：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a = 123;</span><br><span class="line">a  = a + &quot;&quot;;</span><br><span class="line">console.log(typeof(a))</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>字符串–&gt;数字<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a = &quot;123&quot;;</span><br><span class="line">a  = a - 0 ;</span><br><span class="line">console.log(typeof(a))</span><br></pre></td></tr></table></figure></p>
+<h3 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h3><p>数字–&gt;字符串<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var a = 123;</span><br><span class="line">var b = string(a)</span><br><span class="line">   console.log(typeof(b))</span><br><span class="line"> //或用a.toString();</span><br></pre></td></tr></table></figure></p>
+<p>字符串–&gt;数字<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a = &quot;123&quot;;</span><br><span class="line">var b = Number(a)</span><br><span class="line">   console.log(typeof(b))</span><br></pre></td></tr></table></figure></p>
+<p>转换成整型：parseInt()；<br>转换成浮点型： parseFloat();</p>
+<h3 id="3-2变量"><a href="#3-2变量" class="headerlink" title="3.2变量"></a><strong><em>3.2变量</em></strong></h3><ol>
+<li>变量的命名规范：<br>只能由字母、数字、下划线、美元符号$构成，且不能以数字开头，并且不能是JavaScript关键字保留字。<br>比如：<br>var a ;<br>var $ab123;</li>
+<li>注意要点，<ul>
+<li>变量用var来定义。只有定义之后，这个变量才能够使用，而且不需要考虑他到底是什么类型的，尽管用var来第一即可。</li>
+<li>后面代码要用到变量的时候一定不要加引号，加引号就变成了字符串了，而不是变量。</li>
+<li>大写字母是可以使用的，并且大小写敏感。也就是说A和a是两个变量。</li>
+<li>变量名不能超过255个字符，一半也不会写那么长。。</li>
+<li>如果在声明时没有写var被认为是全局变量。</li>
+<li>javascript里面声明的变量，会提升至函数顶部。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<blockquote>
+<h2 id="四、语句"><a href="#四、语句" class="headerlink" title="四、语句"></a>四、语句</h2><ul>
+<li>if语句<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">if(表达式)&#123;</span><br><span class="line">  console.log(我就出去玩)；</span><br><span class="line">&#125;else&#123;</span><br><span class="line">  console.log(我就在家写作业); </span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li><p>for循环语句</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for(var i = 1 ; i &lt;= 100 ; i++)&#123;</span><br><span class="line">  console.log(i);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>switch语句</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">var n = null;</span><br><span class="line">switch(n)&#123;</span><br><span class="line">    case 1:</span><br><span class="line">      执行的代码;</span><br><span class="line">        break;</span><br><span class="line">    case 2:</span><br><span class="line">      执行的代码;</span><br><span class="line">        break;</span><br><span class="line">        ......</span><br><span class="line">    default:</span><br><span class="line">      执行的代码;</span><br><span class="line">        break;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>while语句</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var i = 1；</span><br><span class="line">while（i&lt;10）&#123;</span><br><span class="line">    console.log(i)</span><br><span class="line">    i ++ ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Do..while循环语句</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var i = 1；</span><br><span class="line">do&#123;</span><br><span class="line"> console.log(i)</span><br><span class="line">    i ++ ;</span><br><span class="line">&#125;while(i&lt;10)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>break 语句 和 continue语句<br>break语句：它是结束当前整个这个循环体，跳出该循环体；<br>continue语句：它是结束当前的一个循环，后面的内容不执行，跳入本循环的下一个循环。</p>
+</li>
+</ul>
+<blockquote>
+<h2 id="扩展小知识点-序列化和反序列化"><a href="#扩展小知识点-序列化和反序列化" class="headerlink" title="(扩展小知识点)序列化和反序列化"></a>(扩展小知识点)序列化和反序列化</h2><p>主要用于存储对象状态为另一种通用格式，比如存储为二进制、xml、json等等，把对象转换成这种格式就叫序列化，而反序列化通常是从这种格式转换回来。<br>使用序列化主要是因为跨平台和对象存储的需求，因为网络上只允许字符串或者二进制格式，而文件需要使用二进制流格式，如果想把一个内存中的对象存储下来就必须使用序列化转换为xml（字符串）、json（字符串）或二进制（流）</p>
+</blockquote>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2018/04/25/js基础1/" data-title="js超基础 | YOYO&#39;s blog" data-tsina="" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2018/04/25/tools_contrast/" title="前端工具小总结">
+  <strong>上一篇：</strong><br/>
+  <span>
+  前端工具小总结</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2018/04/25/jsonp/"  title="JSONP">
+ <strong>下一篇：</strong><br/> 
+ <span>JSONP
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、JavaScript和ECMAScript的关系"><span class="toc-number">1.</span> <span class="toc-text">一、JavaScript和ECMAScript的关系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对于他们的比较，只要知道一句就好了：简单来说ECMAScript不是一门语言，而是一个标准，是js的一个标准。而javascript是一种轻量级语言。"><span class="toc-number">2.</span> <span class="toc-text">对于他们的比较，只要知道一句就好了：简单来说ECMAScript不是一门语言，而是一个标准，是js的一个标准。而javascript是一种轻量级语言。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、程序书写的位置、简单语句"><span class="toc-number">3.</span> <span class="toc-text">二、程序书写的位置、简单语句</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1程序书写的位置"><span class="toc-number">3.1.</span> <span class="toc-text">2.1程序书写的位置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2简单语句"><span class="toc-number">3.2.</span> <span class="toc-text">2.2简单语句</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、-类型、值、变量"><span class="toc-number">4.</span> <span class="toc-text">三、 类型、值、变量</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1类型"><span class="toc-number">4.1.</span> <span class="toc-text">3.1类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#隐式类型转换"><span class="toc-number">4.2.</span> <span class="toc-text">隐式类型转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#强制类型转换"><span class="toc-number">4.3.</span> <span class="toc-text">强制类型转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2变量"><span class="toc-number">4.4.</span> <span class="toc-text">3.2变量</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、语句"><span class="toc-number">5.</span> <span class="toc-text">四、语句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#扩展小知识点-序列化和反序列化"><span class="toc-number">6.</span> <span class="toc-text">(扩展小知识点)序列化和反序列化</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+
+
+  
+
+  
+
+  <div class="linkslist">
+  <p class="asidetitle">Links</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://blog.yoyoyuan.top" target="_blank" title="YOYO&#39;s Blog">YOYO&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">Weibo</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=&verifier=b3593ceb&dpc=1"></iframe>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m YOYO . <br/>
+			This is my blog,believe it or not.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/5239740827" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2018 
+		
+		<a href="/about" target="_blank" title="王媛">王媛</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
