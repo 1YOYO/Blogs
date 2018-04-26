@@ -8,16 +8,20 @@
     <title>YOYO&#39;s blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
-    <meta name="author" content="YOYO">
+    <meta name="author" content="王媛">
     
 
     
-    <meta property="og:type" content="website">
-<meta property="og:title" content="YOYO's blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="YOYO's blog">
+    <meta name="description" content="用来写关于web前端的技术博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="YOYO&#39;s blog">
+<meta property="og:url" content="https://blog.yoyoyuan.top/index.html">
+<meta property="og:site_name" content="YOYO&#39;s blog">
+<meta property="og:description" content="用来写关于web前端的技术博客">
+<meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="YOYO's blog">
+<meta name="twitter:title" content="YOYO&#39;s blog">
+<meta name="twitter:description" content="用来写关于web前端的技术博客">
 
     
     <link rel="alternative" href="/atom.xml" title="YOYO&#39;s blog" type="application/atom+xml">
@@ -43,26 +47,26 @@
 			
 			<div id="textlogo">
 				<h1 class="site-name"><a href="/" title="YOYO&#39;s blog">YOYO&#39;s blog</a></h1>
-				<h2 class="blog-motto"></h2>
+				<h2 class="blog-motto">我的小博客</h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
 			</a></div>
 			<nav class="animated">
 				<ul>
 					<ul>
 					 
-						<li><a href="/">Home</a></li>
+						<li><a href="/">主页</a></li>
 					
-						<li><a href="/archives">Archives</a></li>
+						<li><a href="/archives">分类</a></li>
 					
-						<li><a href="/about">About</a></li>
+						<li><a href="/about">简介</a></li>
 					
 					<li>
  					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
-						<input type="hidden" name="q" value="site:yoursite.com">
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="hidden" name="q" value="site:blog.yoyoyuan.top">
 					</form>
 					
 					</li>
@@ -73,819 +77,143 @@
     <div id="container">
       <div id="main">
 
-   
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2018/04/26/数组去重的五种方法/" title="" itemprop="url">
+  
+    <h1 itemprop="name"></h1>
     
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
+     
+           <p itemprop="description" >数组去重的五种方法
+摘自hanzichi的github,欢迎支持原文：点击原文链接即可查看；https://github.com/hanzichi/underscore-analysis/issues/9
+数组去重，一般需求是给你一个数组，调用去重方法，返回数值副本，副本中没有重</p>
+        
     
-      <a href="/2017/09/23/translate/" title="" itemprop="url"></a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="YOYO" target="_blank" itemprop="author">YOYO</a>
-		
-  <p class="article-time">
-    <time datetime="2017-09-23T06:42:18.267Z" itemprop="datePublished"> 發表於 2017-09-23</time>
+    <time datetime="2018-04-26T02:10:05.670Z" itemprop="datePublished">2018-04-26</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2018/04/26/slice.call/" title="" itemprop="url">
+  
+    <h1 itemprop="name"></h1>
     
-  </p>
-</header>
-    <div class="article-content">
+     
+           <p itemprop="description" >([].slice.call(arguments, 1))的理解
+
+
+[] 是什么？
+[].slice是什么？
+fn.call()是什么？
+arguments是什么？
+
+
+
+一. []是什么？12let arr = []                        let ar</p>
         
-        <h1 id="translate模拟滚动"><a href="#translate模拟滚动" class="headerlink" title="translate模拟滚动"></a>translate模拟滚动</h1><hr>
-<p>基于VUE实现的模拟滚动，(适合用于移动的webview)可提高性能</p>
-<hr>
-<h3 id="1-设置可视区域"><a href="#1-设置可视区域" class="headerlink" title="1. 设置可视区域"></a>1. 设置可视区域</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'match-team-style'</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'base-data'</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">p</span>&gt;</span>ping1和ping3为可是区域，里面的内容可滚动<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'ping1'</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">ul</span> <span class="attr">ref</span>=<span class="string">'u1'</span> <span class="attr">:style</span>=<span class="string">'movedist'</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">'n in 100'</span>&gt;</span>&#123;&#123;n&#125;&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'ping2'</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">'n in 100'</span>&gt;</span>&#123;&#123;n&#125;&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'ping3'</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">ul</span> <span class="attr">ref</span>=<span class="string">'u3'</span> <span class="attr">:style</span>=<span class="string">'movedist3'</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">'n in 100'</span>&gt;</span>&#123;&#123;n&#125;&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></div></pre></td></tr></table></figure>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">&lt;style lang='less'&gt;</div><div class="line">	.match-team-style&#123;</div><div class="line">     border:1px solid red;</div><div class="line">     width: 100%;</div><div class="line">     height: 100%;</div><div class="line">     &gt;div&#123;</div><div class="line">      border:1px solid yellow;</div><div class="line">      height: 100%;</div><div class="line">      &gt;div&#123;</div><div class="line">        margin-top: 100px;</div><div class="line">        width:80px;</div><div class="line">        border:1px solid blue;</div><div class="line">        display: inline-block;</div><div class="line">        height: 300px;</div><div class="line">        overflow: hidden;</div><div class="line">        ul&#123;</div><div class="line">          border: 1px solid red;</div><div class="line">        &#125;</div><div class="line">      &#125;</div><div class="line">     &#125;</div><div class="line">	&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-<h3 id="2-通过监听touch事件来动态改变u1和u3的translate"><a href="#2-通过监听touch事件来动态改变u1和u3的translate" class="headerlink" title="2. 通过监听touch事件来动态改变u1和u3的translate"></a>2. 通过监听touch事件来动态改变u1和u3的translate</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</div><div class="line">  components: &#123;&#125;,</div><div class="line">  data () &#123;</div><div class="line">    <span class="keyword">return</span> &#123;</div><div class="line">      movedist: <span class="string">''</span>,</div><div class="line">      movedist3: <span class="string">''</span></div><div class="line">    &#125;</div><div class="line">  &#125;,</div><div class="line">  mounted () &#123;</div><div class="line">    <span class="keyword">this</span>.$nextTick(() =&gt; &#123;</div><div class="line">      <span class="keyword">this</span>.moveDiv(<span class="keyword">this</span>.$refs.u1, <span class="keyword">this</span>.$refs.u3)</div><div class="line">    &#125;)</div><div class="line">  &#125;,</div><div class="line">  methods: &#123;</div><div class="line">    moveDiv (dom1, dom2) &#123;</div><div class="line">      <span class="comment">// 滑动dom1,滑动dom2,dom1和dom2有连锁滑动效果</span></div><div class="line">      <span class="comment">// self.movedist、self.movedist3是dom1和2的style</span></div><div class="line">      <span class="keyword">let</span> startY1 = <span class="string">''</span></div><div class="line">      <span class="keyword">let</span> moveY1 = <span class="string">''</span></div><div class="line">      <span class="keyword">let</span> movedis = <span class="number">0</span></div><div class="line">      <span class="keyword">let</span> translates = <span class="number">0</span></div><div class="line">      <span class="keyword">let</span> self = <span class="keyword">this</span></div><div class="line">      dom1.addEventListener(<span class="string">'touchstart'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line">        startY1 = e.changedTouches[<span class="number">0</span>].pageY</div><div class="line">      &#125;)</div><div class="line">      dom1.addEventListener(<span class="string">'touchmove'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line">        moveY1 = e.changedTouches[<span class="number">0</span>].pageY</div><div class="line">        movedis = translates + moveY1 - startY1</div><div class="line">        <span class="keyword">if</span> (movedis &gt; <span class="number">0</span>) &#123;</div><div class="line">          movedis = <span class="number">0</span></div><div class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (movedis &lt; -(dom1.offsetHeight - <span class="number">300</span>)) &#123;</div><div class="line">          movedis = -(dom1.offsetHeight - <span class="number">300</span>)</div><div class="line">        &#125;</div><div class="line">        self.movedist = <span class="string">`transform: translateY(<span class="subst">$&#123;movedis&#125;</span>px)`</span></div><div class="line">        self.movedist3 = <span class="string">`transform: translateY(<span class="subst">$&#123;movedis&#125;</span>px)`</span></div><div class="line">      &#125;)</div><div class="line">      dom1.addEventListener(<span class="string">'touchend'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line">        translates = movedis</div><div class="line">      &#125;)</div><div class="line">      <span class="keyword">let</span> startY3 = <span class="string">''</span></div><div class="line">      <span class="keyword">let</span> moveY3 = <span class="string">''</span></div><div class="line">      dom2.addEventListener(<span class="string">'touchstart'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line">        startY3 = e.changedTouches[<span class="number">0</span>].pageY</div><div class="line">      &#125;)</div><div class="line">      dom2.addEventListener(<span class="string">'touchmove'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line">        moveY3 = e.changedTouches[<span class="number">0</span>].pageY</div><div class="line">        movedis = translates + moveY3 - startY3</div><div class="line">        <span class="keyword">if</span> (movedis &gt; <span class="number">0</span>) &#123;</div><div class="line">          movedis = <span class="number">0</span></div><div class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (movedis &lt; -(dom1.offsetHeight - <span class="number">300</span>)) &#123;</div><div class="line">          movedis = -(dom1.offsetHeight - <span class="number">300</span>)</div><div class="line">        &#125;</div><div class="line">        self.movedist = <span class="string">`transform: translateY(<span class="subst">$&#123;movedis&#125;</span>px)`</span></div><div class="line">        self.movedist3 = <span class="string">`transform: translateY(<span class="subst">$&#123;movedis&#125;</span>px)`</span></div><div class="line">      &#125;)</div><div class="line">      dom2.addEventListener(<span class="string">'touchend'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line">        translates = movedis</div><div class="line">      &#125;)</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">&lt;<span class="regexp">/script&gt;</span></div></pre></td></tr></table></figure>
-<p>关键代码就是在监听touchmove里实时计算滑动的距离，来设置u1和u3的滚动距离。</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
     
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
+    <time datetime="2018-04-26T02:10:05.654Z" itemprop="datePublished">2018-04-26</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2018/04/25/键盘事件/" title="键盘事件" itemprop="url">
+  
+    <h1 itemprop="name">键盘事件</h1>
     
-      <a href="/2016/11/27/vuejs学习资料/" title="Vue.js学习资料集（持续更新中）" itemprop="url">Vue.js学习资料集（持续更新中）</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="YOYO" target="_blank" itemprop="author">YOYO</a>
-		
-  <p class="article-time">
-    <time datetime="2016-11-27T11:38:44.841Z" itemprop="datePublished"> 發表於 2016-11-27</time>
+     
+           <p itemprop="description" >随笔，小记。。
+
+键盘事件执行顺序？触发键盘事件，顺序为keydown -&amp;gt; keypress -&amp;gt;keyup。
+
+ta们之间的区别？1、keydown和keypress事件表示手指按下瞬间，和按下不松手的这种状态下的事件，事件触发在单词还没敲进文本框时，如果在key</p>
+        
     
-  </p>
-</header>
-    <div class="article-content">
-        
-        <hr>
-<p>版权声明： 转自 SkyeTang <a href="http://blog.csdn.net/skyetang/article/details/51823876" target="_blank" rel="external">http://blog.csdn.net/skyetang/article/details/51823876</a></p>
-<p>最近为了能快速进入工作状态，找了许多学习vue.js的资料。。唉~坚持就是胜利！！！</p>
-<blockquote>
-<ul>
-<li>一、资源类</li>
-<li>二、社区</li>
-<li>三、组件</li>
-<li>四、开发工具</li>
-<li>五、优秀项目</li>
-<li>六、优秀文章教程</li>
-</ul>
-</blockquote>
-<h2 id="一、资源类"><a href="#一、资源类" class="headerlink" title="一、资源类"></a>一、资源类</h2><p>文档</p>
-<p>vue官方文档[<a href="http://cn.vuejs.org/" target="_blank" rel="external">http://cn.vuejs.org/</a>]<br>vue论坛[<a href="http://http//forum.vuejs.org/" target="_blank" rel="external">http://http//forum.vuejs.org/</a>]</p>
-<p>视频教程<br>vue1.0入门教程[<a href="https://laravist.com/series/vue-js-1-0-in-action-series" target="_blank" rel="external">https://laravist.com/series/vue-js-1-0-in-action-series</a>]<br>台湾小凡视频教程[<a href="https://github.com/bhnddowinf/vuejs-learn" target="_blank" rel="external">https://github.com/bhnddowinf/vuejs-learn</a>]</p>
-<hr>
-<h2 id="二、社区"><a href="#二、社区" class="headerlink" title="二、社区"></a>二、社区</h2><p>segmentfault-vue[<a href="https://segmentfault.com/t/vue.js" target="_blank" rel="external">https://segmentfault.com/t/vue.js</a>]<br>知乎-vue[<a href="https://www.zhihu.com/topic/20022242/questions" target="_blank" rel="external">https://www.zhihu.com/topic/20022242/questions</a>]</p>
-<hr>
-<h2 id="三、组件"><a href="#三、组件" class="headerlink" title="三、组件"></a>三、组件</h2><p>1、官方组件</p>
-<p>Loader<br>html-loader-for-webpack[<a href="https://github.com/vuejs/vue-html-loader" target="_blank" rel="external">https://github.com/vuejs/vue-html-loader</a>]<br>Router<br>vue-router-demo[<a href="https://github.com/lazyhero/vue-spa-demo" target="_blank" rel="external">https://github.com/lazyhero/vue-spa-demo</a>]<br>vue-router文档[<a href="http://router.vuejs.org/zh-cn/index.html" target="_blank" rel="external">http://router.vuejs.org/zh-cn/index.html</a>]<br>Vuex（专门为 Vue.js 应用设计的状态管理架构）<br>vuex文档[<a href="http://vuex.vuejs.org/zh-cn/intro.html" target="_blank" rel="external">http://vuex.vuejs.org/zh-cn/intro.html</a>]<br>Ajax<br>vue-async-data[<a href="https://github.com/vuejs/vue-async-data" target="_blank" rel="external">https://github.com/vuejs/vue-async-data</a>]<br>Vue-cli（快速搭建vue项目）<br>vue-cli[<a href="https://github.com/vuejs/vue-cli" target="_blank" rel="external">https://github.com/vuejs/vue-cli</a>]<br>2、其它组件</p>
-<p>UI组件<br>mint-ui：移动端组件[<a href="https://github.com/ElemeFE/mint-ui" target="_blank" rel="external">https://github.com/ElemeFE/mint-ui</a>]<br>vux：基于vue与weui的移动端UI组件[<a href="https://github.com/airyland/vux" target="_blank" rel="external">https://github.com/airyland/vux</a>]<br>vue-weui[<a href="https://github.com/aidenzou/vue-weui" target="_blank" rel="external">https://github.com/aidenzou/vue-weui</a>]<br>Lazyload<br>图片懒加载[<a href="https://github.com/hilongjw/vue-lazyload" target="_blank" rel="external">https://github.com/hilongjw/vue-lazyload</a>]<br>Drag<br>vue-drag and drop[<a href="https://github.com/james2doyle/vue-drag-and-drop" target="_blank" rel="external">https://github.com/james2doyle/vue-drag-and-drop</a>]<br>Infinite无限加载<br>vue-infinite-load[<a href="https://github.com/ElemeFE/vue-infinite-scroll" target="_blank" rel="external">https://github.com/ElemeFE/vue-infinite-scroll</a>]</p>
-<hr>
-<h2 id="四、开发工具"><a href="#四、开发工具" class="headerlink" title="四、开发工具"></a>四、开发工具</h2><p>Vue-devtools[<a href="https://github.com/vuejs/vue-devtools" target="_blank" rel="external">https://github.com/vuejs/vue-devtools</a>]</p>
-<hr>
-<h2 id="五、优秀项目"><a href="#五、优秀项目" class="headerlink" title="五、优秀项目"></a>五、优秀项目</h2><p>青城 [<a href="https://github.com/zerqu/qingcheng" target="_blank" rel="external">https://github.com/zerqu/qingcheng</a>]<br>vue-blog[<a href="https://github.com/V-Tom/vue-blog" target="_blank" rel="external">https://github.com/V-Tom/vue-blog</a>]</p>
-<hr>
-<h2 id="六、优秀文章教程"><a href="#六、优秀文章教程" class="headerlink" title="六、优秀文章教程"></a>六、优秀文章教程</h2><p>Vue.js 快速入门[<a href="https://segmentfault.com/a/1190000003968020" target="_blank" rel="external">https://segmentfault.com/a/1190000003968020</a>]<br>基于vue和webpack的chat项目[<a href="https://segmentfault.com/a/1190000003630417" target="_blank" rel="external">https://segmentfault.com/a/1190000003630417</a>]<br>Vue + webpack 项目实践【顶】[<a href="http://jiongks.name/blog/just-vue/" target="_blank" rel="external">http://jiongks.name/blog/just-vue/</a>]<br>使用node+vue.js实现SPA应用[<a href="https://segmentfault.com/a/1190000004372736" target="_blank" rel="external">https://segmentfault.com/a/1190000004372736</a>]</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
+    <time datetime="2018-04-25T07:23:11.382Z" itemprop="datePublished">2018-04-25</time>
+  </a>
+</section>
 
 
 
 
 
 
-   
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2018/04/25/逻辑运算符/" title="JS逻辑运算符&amp;&amp;与||的短路运算" itemprop="url">
+  
+    <h1 itemprop="name">JS逻辑运算符&amp;&amp;与||的短路运算</h1>
     
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
+     
+           <p itemprop="description" >小记
+
+最近看到一个面试题,题目如下:
+1alert(1&amp;amp;&amp;amp;2);//弹出什么？
+  正确的结果是 2.
+这结果让我觉得自己对于逻辑运算符的理解还很浅~在网上搜集了一下资料，发现一个专业名词–&amp;gt;（短路计算原则）。。。那么来研究研究吧~~~
+1.在MDN上面找</p>
+        
     
-      <a href="/2016/11/16/逻辑运算符/" title="JS逻辑运算符&amp;&amp;与||的短路运算" itemprop="url">JS逻辑运算符&amp;&amp;与||的短路运算</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="YOYO" target="_blank" itemprop="author">YOYO</a>
-		
-  <p class="article-time">
-    <time datetime="2016-11-16T11:29:48.330Z" itemprop="datePublished"> 發表於 2016-11-16</time>
+    <time datetime="2018-04-25T07:23:11.380Z" itemprop="datePublished">2018-04-25</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2018/04/25/webpack/" title="webpack的搭建" itemprop="url">
+  
+    <h1 itemprop="name">webpack的搭建</h1>
     
-  </p>
-</header>
-    <div class="article-content">
+     
+           <p itemprop="description" >大半夜洗了个头，估计一时半会儿还睡不了觉。突然想到以后可能要用到webpack，今天就回顾一下webpack的搭建，方便自己以后用起来顺手些。  主要步骤为：
+
+
+1.引入webpack依赖，全局安装webpack
+2.把运行命令配置到npm的script中(方便运行)
+3.常用</p>
         
-        <blockquote>
-<p>小记</p>
-</blockquote>
-<p>最近看到一个面试题,题目如下:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">alert(1&amp;&amp;2);//弹出什么？</div></pre></td></tr></table></figure>
-<p>  正确的结果是 2.</p>
-<p>这结果让我觉得自己对于逻辑运算符的理解还很浅~在网上搜集了一下资料，发现一个专业名词–&gt;（短路计算原则）。。。那么来研究研究吧~~~</p>
-<p>1.在MDN上面找到相应描述逻辑运算符的说明:</p>
-<p>逻辑与 (&amp;&amp;) expr1&amp;&amp;expr2 如果expr1 能转换成false则返回expr1,否则返回expr2. 因此, 在Boolean环境中使用时, 两个操作结果都为true时返回true,否则返回false.<br>逻辑或 (||) expr1||expr2 如果expr1能转换成true则返回expr1,否则返回expr2. 因此,在boolean环境(在if的条件判断中)中使用时, 二者操作结果中只要有一个为true,返回true;二者操作结果都为false时返回false.<br>逻辑非(!) !expr 如果单个表达式能转换为true的话返回false,否则返回true. </p>
-<p>能够转换为false的表达式有:false,””(空字符串),0和NaN,null,undefined.</p>
-<p>能够转化为true的值为:true,任何非空字符串，任何非零数字值(包括无穷大),任何对象</p>
-<p>以上规则已经再次确认，摘自”javascript高级程序设计(第3版)”这本书</p>
-<p>那么上面的题就好理解了，（1&amp;&amp;2）1返回的是true不是false所以无法返回第一个值,则返回的是数字2.</p>
-<ol>
-<li>短路计算原则:</li>
-</ol>
-<p>由于逻辑表达式的运算的顺序是从左到右,也可以用以下规则进行”短路”计算:<br>false &amp;&amp; (anything)  短路计算的结果为false.<br>true || (anything)  短路计算的结果为 true</p>
-<p>3.一些简单逻辑运算例子理解</p>
-<p>(1)逻辑与<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&quot;a&quot; &amp;&amp; &quot;b&quot;     		//结果为 b</div><div class="line">false &amp;&amp; &quot;a&quot;     	// f &amp;&amp; t 结果为 false</div><div class="line">&quot;a&quot; &amp;&amp; false     	// t &amp;&amp; f 结果为 false</div><div class="line">true  &amp;&amp; 2 &amp;&amp; &quot;a&quot;   //结果为&quot;a&quot;</div></pre></td></tr></table></figure></p>
-<p>(2)逻辑或</p>
-<p>false || (2 == 4)        // f || f 结果为 false<br>“a” || “b”              // t || t 结果为 a<br>false || “a”          // f || t 结果为 a(这个例子非常迷惑人)<br>“a” || false          // t || f 结果为 a</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
     
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2016/11/16/webpack/" title="webpack的搭建" itemprop="url">webpack的搭建</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="YOYO" target="_blank" itemprop="author">YOYO</a>
-		
-  <p class="article-time">
-    <time datetime="2016-11-15T16:11:06.774Z" itemprop="datePublished"> 發表於 2016-11-16</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>  大半夜洗了个头，估计一时半会儿还睡不了觉。突然想到以后可能要用到webpack，今天就回顾一下webpack的搭建，方便自己以后用起来顺手些。<br>  主要步骤为：</p>
-<blockquote>
-<ul>
-<li>1.引入webpack依赖，全局安装webpack</li>
-<li>2.把运行命令配置到npm的script中(方便运行)</li>
-<li>3.常用加载器介绍(类似gulp插件)</li>
-</ul>
-</blockquote>
-<hr>
-<blockquote>
-<h2 id="一、引入webpack依赖"><a href="#一、引入webpack依赖" class="headerlink" title="一、引入webpack依赖"></a>一、引入webpack依赖</h2></blockquote>
-<h3 id="1-1安装全局webpack"><a href="#1-1安装全局webpack" class="headerlink" title="1.1安装全局webpack"></a><strong>1.1安装全局webpack</strong></h3><p>在一个盘符中创建一个工程，（注意不要放在中文目录，以免不必要的麻烦）然后打开CMD，输入以下命令。</p>
-<p><code>npm install webpack -g</code></p>
-<h3 id="1-2创建配置文件"><a href="#1-2创建配置文件" class="headerlink" title="1.2创建配置文件"></a><strong><em>1.2创建配置文件</em></strong></h3><p>在项目工程的根目录创建三个或多个webpack配置文件<br>（1）web.base.config.js  //公用的配置放在这里面<br>（2）web.develop.config.js  //开发环境中用到的配置文件<br>（3）web.publish.config.js   //生产环境中用到的配置文件</p>
-<h4 id="1-2-1在develop中配置基本内容"><a href="#1-2-1在develop中配置基本内容" class="headerlink" title="1.2.1在develop中配置基本内容"></a><strong><em>1.2.1在develop中配置基本内容</em></strong></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">var path = require(&apos;path&apos;);</div><div class="line"></div><div class="line">module.exports = &#123;</div><div class="line">    entry:path.resolve(__dirname,&apos;src/js/app.js&apos;),//文件入口</div><div class="line">    output: &#123;                                     //输出文件配置信息</div><div class="line">        path: path.resolve(__dirname, &apos;deploy/js&apos;),</div><div class="line">        filename: &apos;bundle.js&apos;,</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>备注：这里说明一下，这里用到的时一种模块化的规范conmmonjs,想一行代码是导入，第三行是导出。</p>
-<h4 id="1-2-2运行检错"><a href="#1-2-2运行检错" class="headerlink" title="1.2.2运行检错"></a><strong><em>1.2.2运行检错</em></strong></h4><p> 法一：在根目录运行webpack的命令，默认会去查找名称为webpack.config.js的文件执行，如果没有就会报配置信息没有配置的错误。。<br> 法二：还可以通过运行下面的命令进行要执行的配置文件的选择<br>webpack –-config  web.develop.config.js</p>
-<p>。。。未完待续。。。（好吧，我承认我困得睁不开眼了，，睡觉去~）</p>
-<blockquote>
-<h2 id="二、把运行命令配置到npm的script中"><a href="#二、把运行命令配置到npm的script中" class="headerlink" title="二、把运行命令配置到npm的script中"></a>二、把运行命令配置到npm的script中</h2></blockquote>
-<p>这里要说明一下，因为webpack的命令会很长，所以需要配置一下，方便运行。</p>
-<h4 id="2-1简单配置"><a href="#2-1简单配置" class="headerlink" title="2.1简单配置"></a><strong><em>2.1简单配置</em></strong></h4><p>具体操作是：</p>
-<pre><code>1. npm init ---------------&gt;会导出pakage.json
-2.这里需要安装webpack的局部变量：npm install webpack --save
-3.在pakeg.json中找到scripts，然后写:
-</code></pre><p><code>&#39;develop&#39; : &#39;webpack –-config web.develop.config.js&#39;</code><br>        4.测试运行：npm run develop</p>
-<h4 id="2-2为发布目录启动服务"><a href="#2-2为发布目录启动服务" class="headerlink" title="2.2为发布目录启动服务"></a><strong><em>2.2为发布目录启动服务</em></strong></h4><p>在这里我摘抄一段，便于理解：</p>
-<blockquote>
-<p>如果需要一直输入 npm run develop 确实是一件非常无聊的事情，幸运的是，我们可以把让他安静的运行，让我们设置 webpack-dev-server<br>除了提供模块打包功能，Webpack还提供了一个基于Node.js Express框架的开发服务器，它是一个静态资源Web服务器，对于简单静态页面或者仅依赖于独立服务的前端页面，都可以直接使用这个开发服务器进行开 发。在开发过程中，开发服务器会监听每一个文件的变化，进行实时打包，并且可以推送通知前端页面代码发生了变化，从而可以实现页面的自动刷新。</p>
-</blockquote>
-<p>1.安装webpack-dev-server   <code>npm install webpack-dev-server --save</code><br>2.调整npm的package.json scripts 部分中开发命令的配置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&quot;scripts&quot;: &#123;</div><div class="line">&quot;develop&quot;: &quot;webpack-dev-server  --config web.develop.config.js --devtool eval --progress --colors --hot --content-base src&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>备注：webpack-dev-server - 在 localhost:8080 建立一个 Web 服务器。<br>当你运行 npm run develop的时候，会启动一个Web服务器，然后监听文件修改，然后自动重新合并你的代码。真的非常简洁！</p>
-<h4 id="2-3-浏览器自动刷新"><a href="#2-3-浏览器自动刷新" class="headerlink" title="2.3 浏览器自动刷新"></a><strong><em>2.3 浏览器自动刷新</em></strong></h4><p>在develop中的的入口文件前添加这两句：<br><code>&#39;webpack/hot/dev-server&#39;</code> <code>&#39;webpack-dev-server/client?http://localhost:8080&#39;,</code><br>如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">module.exports = &#123;</div><div class="line">    entry:[</div><div class="line">        &apos;webpack/hot/dev-server&apos;,</div><div class="line">        &apos;webpack-dev-server/client?http://localhost:8080&apos;,</div><div class="line">        path.resolve(__dirname,&apos;src/js/app.js&apos;)</div><div class="line">    ]</div></pre></td></tr></table></figure></p>
-<blockquote>
-<p>##三、常用加载器介绍(类似gulp插件)—&gt;摘抄</p>
-</blockquote>
-<p>Loader：这是webpack准备的一些预处理工具<br><strong>3.1 编译jsx和ES6到原生js（将es6转化成浏览器能识别的解析的es5）</strong><br>3.1.1首先安装下面的所有依赖<br>npm install babel-loader –save-dev<br>npm install babel-core babel-preset-es2015 babel-preset-react –save-dev<br>3.1.2修改开发配置文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">module: &#123;</div><div class="line">    loaders: [</div><div class="line">        &#123;</div><div class="line">            test: /\.jsx?$/, // 用正则来匹配文件路径，这段意思是匹配 js 或者 jsx</div><div class="line">            loader: &apos;babel&apos;,// 加载模块 &quot;babel&quot; 是 &quot;babel-loader&quot; 的缩写</div><div class="line">            query: &#123;</div><div class="line">                presets: [&apos;es2015&apos;, &apos;react&apos;]</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    ]</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>3.1.2使用<br>直接从新运行npm run develop即可<br><strong>3.2加载css</strong><br>Webpack允许像加载任何代码一样加载 CSS。你可以选择你所需要的方式，但是你可以为每个组件把所有你的 CSS 加载到入口主文件中来做任何事情。<br>加载 CSS 需要 css-loader 和 style-loader，他们做两件不同的事情，css-loader会遍历 CSS 文件，然后找到 url() 表达式然后处理他们，style-loader 会把原来的 CSS 代码插入页面中的一个 style 标签中。<br>3.2.1首先下载依赖<br>npm install css-loader style-loader –save-dev<br>3.2.2修改配置文件<br>{<br>     test: /.css$/, // Only .css files<br>    loader: ‘style!css’ // Run both loaders<br>}<br>！用来定义loader的串联关系，”-loader”是可以省略不写的，多个loader之间用“!”连接起来<br>3.2.3 Css加载策略<br>在你的主入口文件中，比如 src/app.js 你可以为整个项目加载所有的 CSS<br>    Import  ‘./project-styles.css’;<br>CSS 就完全包含在合并的应用中，再也不需要重新下载。<br>懒加载（推荐）<br>如果你想发挥应用中多重入口文件的优势，你可以在每个入口点包含各自的 CSS。<br>你把你的模块用文件夹分离，每个文件夹有各自的 CSS 和 JavaScript 文件。再次，当应用发布的时候，导入的 CSS 已经加载到每个入口文件中。</p>
-<p>定制组件css<br>你可以根据这个策略为每个组件创建 CSS 文件，可以让组件名和 CSS 中的 class 使用一个命名空间，来避免一个组件中的一些 class 干扰到另外一些组件的 class。</p>
-<pre><code>使用内联样式取代 CSS 文件
-</code></pre><p>在 “React Native” 中你不再需要使用任何 CSS 文件，你只需要使用 style 属性，可以把你的 CSS 定义成一个对象，那样就可以根据你的项目重新来考略你的 CSS 策略。<br>注意：这点的样式都没有-</p>
-<p><strong>3.3加载sass</strong><br>3.3.1下载依赖<br>npm install sass-loader  –save-dev<br>3.3.2修改配置文件</p>
-<pre><code>{
- test: /\.scss$/,
- loader: &apos;style!css!sass&apos;
-}
-</code></pre><p><strong>3.4图片处理</strong><br>直到 HTTP/2 你才能在应用加载的时候避免设置太多 HTTP 请求。根据浏览器不同你必须设置你的并行请求数，如果你在你的 CSS 中加载了太多图片的话，可以自动把这些图片转成 BASE64 字符串然后内联到 CSS 里来降低必要的请求数，这个方法取决与你的图片大小。你需要为你的应用平衡下载的大小和下载的数量，不过 Webpack 可以让这个平衡十分轻松适应。<br>3.4.1下载依赖<br>npm install url-loader –save-dev<br>3.4.2修改配置文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">      test: /\.(png|jpg)$/,</div><div class="line">      loader: &apos;url?limit=25000&amp;name=images/[name].[ext]&apos;</div><div class="line"> &#125;</div></pre></td></tr></table></figure></p>
-<p>加载器，它会把需要转换的路径变成 BASE64 字符串，在其他的 Webpack 书中提到的这方面会把你 CSS 中的 “url()” 像其他 require 或者 import 来处理。意味着如果我们可以通过它来处理我们的图片文件。<br>url-loader 传入的 limit 参数是告诉它图片如果不大于 25KB 的话要自动在它从属的 css 文件中转成 BASE64 字符串。<br>3.4.3大图片处理<br>在代码中是一下情况：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">div.img&#123;</div><div class="line">    background: url(../image/xxx.jpg)</div><div class="line">&#125;</div><div class="line"></div><div class="line">//或者</div><div class="line">var img = document.createElement(&quot;img&quot;);</div><div class="line">img.src = require(&quot;../image/xxx.jpg&quot;);</div><div class="line">document.body.appendChild(img);</div></pre></td></tr></table></figure></p>
-<p>你可以这样配置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">module: &#123;</div><div class="line">    &#123;</div><div class="line">      test: /\.(png|jpg)$/,</div><div class="line">      loader: &apos;url-loader?limit=10000&amp;name=build/[name].[ext]&apos;</div><div class="line">    &#125;]</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>针对上面的两种使用方式，loader可以自动识别并处理。根据loader中的设置，webpack会将小于指点大小的文件转化成 base64 格式的 dataUrl，其他图片会做适当的压缩并存放在指定目录中。</p>
-<p><strong>3.5文件处理</strong><br>3.5.1说明<br>现在webpack处理css中的图片还是可以的，但是处理html中的图片能力有限，所以有图片的地方最好放在css中，或者使用require的方式</p>
-<p>3.5.2下载依赖<br>npm install file-loader –save-dev<br>3.5.2修改配置文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    test: /\.(png|jpeg|gif|jpg)$/,</div><div class="line">    loader: &apos;file-loader?name=images/[name].[ext]&apos;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>注意：这点由于一直加载不上图片，所以我把输出的配置改为了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">output: &#123;</div><div class="line">    path: path.resolve(__dirname, &apos;deploy&apos;),</div><div class="line">    filename: &apos;bundle.js&apos;,</div><div class="line">&#125;,</div></pre></td></tr></table></figure></p>
-<p>我把下面的loader注释了，影响图片的加载<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    test: /\.(png|jpg)$/,</div><div class="line">    loader: &apos;url?limit=25000&apos;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p><strong>3.6内联fonts</strong><br>字体实在是非常难引入正确，首先，通常我们有 4 种不一样的格式，但是只有其中一种会被对应的浏览器使用到。你肯定不会想引入全部四种格式，这样只会让 CSS 文件更加膨胀，然后又没办法优化。<br>取决与你的项目，你可能可以选择出一种字体格式，如果你不考略 Opera Mini，所有的浏览器都支持 .woff 和 .svg 格式。问题是不同格式下在各种浏览器下字体看起来会有一点点不同。所以测试 .woff 和 .svg，然后找出能够在所有浏览器中看起来最好的那个。<br>{<br>      test: /.woff$/,<br>      loader: ‘url?limit=100000’<br>}</p>
-<blockquote>
-<h2 id="四、常用插件介绍"><a href="#四、常用插件介绍" class="headerlink" title="四、常用插件介绍"></a>四、常用插件介绍</h2></blockquote>
-<p>webpack提供了[丰富的组件]用来满足不同的需求，当然我们也可以自行实现一个组件来满足自己的需求：<br>plugins: [<br>     //your plugins list<br> ]<br>详细的请看这里：<br><a href="http://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin" target="_blank" rel="external">http://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin</a><br>注释：Word中出现的所有的包，都可以通过npm进行包查找，然后查看具体的使用方法。<br><strong>4.1压缩插件</strong><br>这个插件是自带的</p>
-<p><strong>4.2提取css插件</strong><br>在webpack中编写js文件时，可以通过require的方式引入其他的静态资源，可通过loader对文件自动解析并打包文件。通常会将js 文件打包合并，css文件会在页面的header中嵌入style的方式载入页面。但开发过程中我们并不想将样式打在脚本中，最好可以独立生成css文件，以外链的形式加载。这时extract-text-webpack-plugin插件可以帮我们达到想要的效果。需要使用npm的方式加载插件，然后 参见下面的配置，就可以将js中的css文件提取，并以指定的文件名来进行加载。<br>npm install extract-text-webpack-plugin –save-dev<br>我发现这个有一个问题，就是他只能把css抽出来，但是sass的样式不能分离出来。<br>var ExtractTextPlugin = require(“extract-text-webpack-plugin”);<br>分离css<br>loader: ExtractTextPlugin.extract(“style-loader”, “css-loader”)<br>分离scss<br>loader: ExtractTextPlugin.extract(‘style’, “css!sass”)<br>new ExtractTextPlugin(“app.css”)</p>
-<p><strong>4.3合并配置文件插件</strong><br>webpack-config<br><a href="https://github.com/mdreizin/webpack-config" target="_blank" rel="external">https://github.com/mdreizin/webpack-config</a><br><strong>4.4创建index.Html页面插件</strong><br>html-webpack-plugin<br>npm install html-webpack-plugin –save-dev</p>
-<p>//引用模块<br>var HtmlWebpackPlugin = require(‘html-webpack-plugin’);<br>// 配置生成index.html<br>new HtmlWebpackPlugin({<br>            title: ‘Custom template using Handlebars’,<br>            template: ‘./src/index.html’<br>        })<br><strong>4.5自动打开浏览器插件</strong><br>open-browser-webpack-plugin<br>npm install –save-dev open-browser-webpack-plugin</p>
-<p>//引用模块<br>var OpenBrowserPlugin = require(‘open-browser-webpack-plugin’);<br>//配置打开浏览器<br>new OpenBrowserPlugin()</p>
+    <time datetime="2018-04-25T07:23:11.378Z" itemprop="datePublished">2018-04-25</time>
+  </a>
+</section>
 
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
 
 
-</div>
 
 
 
 
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2016/11/05/jq基础2/" title="js中的集合" itemprop="url">js中的集合</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="YOYO" target="_blank" itemprop="author">YOYO</a>
-		
-  <p class="article-time">
-    <time datetime="2016-11-05T03:07:46.891Z" itemprop="datePublished"> 發表於 2016-11-05</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>方法语法：map()<br>map(callback)<br>为包装集中的每一个元素调用回调函数，并将返回值收集到jQuery对象的实例中。<br>参数<br>callback （函数）回调函数，为包装集中的每个元素调用该函数。<br>比如，下面的代码将页面上所有div元素的id值收集到一个javascript数组中：<br>复制代码 代码如下:</p>
-<p>var iDs = $(“div”).map(function(){<br>    return (this.id==undefined) ? null :this.id;<br>}).get();<br>再看如下的表单中包含的一组 checkbox 框：<br>复制代码 代码如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;form method=&quot;post&quot; action=&quot;&quot;&gt;</div><div class="line">&lt;fieldset&gt;</div><div class="line">&lt;div&gt;</div><div class="line">&lt;label for=&quot;two&quot;&gt;2&lt;/label&gt;</div><div class="line">&lt;input type=&quot;checkbox&quot; value=&quot;2&quot; id=&quot;two&quot; name=&quot;number[]&quot;&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;div&gt;</div><div class="line">&lt;label for=&quot;four&quot;&gt;4&lt;/label&gt;</div><div class="line">&lt;input type=&quot;checkbox&quot; value=&quot;4&quot; id=&quot;four&quot; name=&quot;number[]&quot;&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;div&gt;</div><div class="line">&lt;label for=&quot;six&quot;&gt;6&lt;/label&gt;</div><div class="line">&lt;input type=&quot;checkbox&quot; value=&quot;6&quot; id=&quot;six&quot; name=&quot;number[]&quot;&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;div&gt;</div><div class="line">&lt;label for=&quot;eight&quot;&gt;8&lt;/label&gt;</div><div class="line">&lt;input type=&quot;text&quot; value=&quot;8&quot; id=&quot;eight&quot; name=&quot;number[]&quot;&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;/fieldset&gt;</div><div class="line">&lt;/form&gt;</div></pre></td></tr></table></figure></p>
-<p>我们可以得到一个用逗号分隔的复选框 ID:<br>复制代码 代码如下:</p>
-<p>$(‘:checkbox’).map(function() {<br>return this.id;<br>}).get().join();<br>此调用的结果是字符串， “two,four,six”.<br>在回调函数中，this指向每次迭代中的当前DOM元素。<br>方法语法：each()<br>each(iterator)<br>遍历匹配集里所有的元素，为每一个元素调用传入的迭代函数<br>iterator （函数）回调函数，为匹配集中的每个元素调用<br>each()方法也可以用来遍历javascript数组对象甚至单个对象，举个栗子：<br>复制代码 代码如下:</p>
-<p>$([a,b,c,d]).each(function(){<br>    alert(this);<br>})<br>这个语句会为传入$()中数组的每个元素调用迭代函数，函数中的this指向单独的数组项。<br>每次回调函数执行时，会传递当前循环次数作为参数(从0开始计数)。更重要的是，回调函数是在当前DOM元素为上下文的语境中触发的。因此关键字 this 总是指向这个元素。<br>假设页面上有这样一个简单的无序列表。<br>复制代码 代码如下:</p>
-<p><ul></ul></p>
-<p><li>foo</li></p>
-<p><li>bar</li><br><br>你可以选中并迭代这些列表：<br>复制代码 代码如下:</p>
-<p>$( “li” ).each(function( index ) {<br>console.log( index + “: “” + $(this).text() );<br>});<br>列表中每一项会显示在下面的消息中：<br>0: foo<br>1: bar<br>两者的区别<br>map()方法主要用来遍历操作数组和对象，each()主要用于遍历jquery对象。<br>each()返回的是原来的数组，并不会新创建一个数组。<br>map()方法会返回一个新的数组。如果在没有必要的情况下使用map，则有可能造成内存浪费。</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2016/11/05/angularjs中的transclude及ng-transclude指令/" title="transclude及ng-transclude" itemprop="url">transclude及ng-transclude</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="YOYO" target="_blank" itemprop="author">YOYO</a>
-		
-  <p class="article-time">
-    <time datetime="2016-11-05T02:48:44.412Z" itemprop="datePublished"> 發表於 2016-11-05</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <blockquote>
-<p>随笔，小记。。</p>
-</blockquote>
-<h3 id="transclude？"><a href="#transclude？" class="headerlink" title="transclude？"></a>transclude？</h3><p>嵌入的意思,也就是说你是否需要将你的指令（内部）的元素嵌入到你的（模板）中去，默认为false。如果你需要的话，那么就需要将transclude设置为true。如果将这个值设置为true的话，就要配合angular的ng-transclude指令来进行使用，</p>
-<hr>
-<h3 id="代码实现？"><a href="#代码实现？" class="headerlink" title="代码实现？"></a>代码实现？</h3><p>1.html中的代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;!--  指令a-transclude 内部含有元素--&gt;</div><div class="line">&lt;breadcrumb&gt;指令（内部）内容&lt;/breadcrumb&gt;</div></pre></td></tr></table></figure></p>
-<p>2.js中的代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">myApp.directive(&apos;breadcrumb&apos;, [&apos;$parse&apos;, function($parse) &#123;</div><div class="line">		return &#123;</div><div class="line">			templateUrl: &apos;tmpls/breadcrumb.html&apos;,</div><div class="line">            transclude:true</div><div class="line">		&#125;</div><div class="line">&#125;]);</div></pre></td></tr></table></figure></p>
-<p>3.tmpls/breadcrumb.html模板中的代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;ol&gt;</div><div class="line">  &lt;li&gt;</div><div class="line">  	&lt;a href=&quot;#&quot; ng-transclude&gt;模板1&lt;/a&gt;</div><div class="line">  	&lt;a href=&quot;#&quot;&gt;模板2&lt;/a&gt;</div><div class="line">  &lt;/li&gt;</div><div class="line">&lt;/ol&gt;</div></pre></td></tr></table></figure></p>
-<p>备注：<strong><em> 模板由两部分组成，一部分是含有ng-transclude指令的，一部分是不含有这个指令的 </em></strong></p>
-<p><strong><em> 最后的结果是 </em></strong></p>
-<p>(<a href="https://blog.yoyoyuan.top/img/transclude.png" target="_blank" rel="external">https://blog.yoyoyuan.top/img/transclude.png</a>)</p>
-<hr>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2016/10/28/键盘事件/" title="键盘事件" itemprop="url">键盘事件</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="YOYO" target="_blank" itemprop="author">YOYO</a>
-		
-  <p class="article-time">
-    <time datetime="2016-10-28T04:42:02.179Z" itemprop="datePublished"> 發表於 2016-10-28</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <blockquote>
-<p>随笔，小记。。</p>
-</blockquote>
-<h3 id="键盘事件执行顺序？"><a href="#键盘事件执行顺序？" class="headerlink" title="键盘事件执行顺序？"></a>键盘事件执行顺序？</h3><p>触发键盘事件，顺序为keydown -&gt; keypress -&gt;keyup。</p>
-<hr>
-<h3 id="ta们之间的区别？"><a href="#ta们之间的区别？" class="headerlink" title="ta们之间的区别？"></a>ta们之间的区别？</h3><p>1、keydown和keypress事件表示手指按下瞬间，和按下不松手的这种状态下的事件，事件触发在单词还没敲进文本框时，如果在keydown、keypress事件中输出文本框中的文本，得到的是触发键盘事件前的文本。而keyup事件触发时整个键盘事件的操作已经完成，获得的是触发键盘事件后的文本。</p>
-<p>2、keypress对中文输入法支持不好，无法响应中文输入,无法响应系统功能键（如delete，空格键）。</p>
-<p>3、keyup事件中无法阻止浏览器默认事件，因为在keypress时，浏览器默认行为已经完成，用e.preventDefault和event.teturnValue=false都不能阻止在文本框中输入文字的行为，如要阻止在文本框中输入文字，必须在keydown或keypress时进行阻止。</p>
-<p>4、textInput事件<br>若把textInpput也加进来，触发的顺序为：keydown -&gt; keypress -&gt;textInput -&gt; keyup<br>textInput事件是后来支持的，主要用来替换keypress，与keypress的主要差别在于添加了对中文输入法的支持，还有一点就是textInput只在可编辑文本区才能触发（如input、textarea），而keypress是任何能获得焦点的控件的能触发（如button），但是textInput事件的支持还不是很好。</p>
-<p>备注：<strong><em> 只会在用户输入可视字符时触发 </em></strong></p>
-<hr>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2016/10/28/jsonp/" title="JSONP" itemprop="url">JSONP</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="YOYO" target="_blank" itemprop="author">YOYO</a>
-		
-  <p class="article-time">
-    <time datetime="2016-10-28T04:41:58.460Z" itemprop="datePublished"> 發表於 2016-10-28</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>版权声明：转载自 <a href="http://www.cnblogs.com/dowinning/archive/2012/04/19/json-jsonp-jquery.html" target="_blank" rel="external">http://www.cnblogs.com/dowinning/archive/2012/04/19/json-jsonp-jquery.html</a> 博客园</p>
-<h2 id="先说说JSONP是怎么产生的："><a href="#先说说JSONP是怎么产生的：" class="headerlink" title="先说说JSONP是怎么产生的："></a>先说说JSONP是怎么产生的：</h2><p>其实网上关于JSONP的讲解有很多，但却千篇一律，而且云里雾里，对于很多刚接触的人来讲理解起来有些困难，小可不才，试着用自己的方式来阐释一下这个问题，看看是否有帮助。</p>
-<p>1、一个众所周知的问题，Ajax直接请求普通文件存在跨域无权限访问的问题，甭管你是静态页面、动态网页、web服务、WCF，只要是跨域请求，一律不准；</p>
-<p>2、不过我们又发现，Web页面上调用js文件时则不受是否跨域的影响（不仅如此，我们还发现凡是拥有”src”这个属性的标签都拥有跨域的能力，比如script、img、iframe标签）；</p>
-<p>3、于是可以判断，当前阶段如果想通过纯web端（ActiveX控件、服务端代理、属于未来的HTML5之Websocket等方式不算）跨域访问数据就只有一种可能，那就是在远程服务器上设法把数据装进js格式的文件里，供客户端调用和进一步处理；</p>
-<p>4、恰巧我们已经知道有一种叫做JSON的纯字符数据格式可以简洁的描述复杂数据，更妙的是JSON还被js原生支持，所以在客户端几乎可以随心所欲的处理这种格式的数据；</p>
-<p>5、这样子解决方案就呼之欲出了，web客户端通过与调用脚本一模一样的方式，来调用跨域服务器上动态生成的js格式文件（一般以JSON为后缀），显而易见，服务器之所以要动态生成JSON文件，目的就在于把客户端需要的数据装入进去。</p>
-<p>6、客户端在对JSON文件调用成功之后，也就获得了自己所需的数据，剩下的就是按照自己需求进行处理和展现了，这种获取远程数据的方式看起来非常像AJAX，但其实并不一样。</p>
-<p>7、为了便于客户端使用数据，逐渐形成了一种非正式传输协议，人们把它称作JSONP，该协议的一个要点就是允许用户传递一个callback参数给服务端，然后服务端返回数据时会将这个callback参数作为函数名来包裹住JSON数据，这样客户端就可以随意定制自己的函数来自动处理返回数据了。</p>
-<p>如果对于callback参数如何使用还有些模糊的话，我们后面会有具体的实例来讲解。</p>
-<hr>
-<p>JSONP的客户端具体实现：</p>
-<p>不管jQuery也好，extjs也罢，又或者是其他支持jsonp的框架，他们幕后所做的工作都是一样的，下面我来循序渐进的说明一下jsonp在客户端的实现：</p>
-<p>1、我们知道，哪怕跨域js文件中的代码（当然指符合web脚本安全策略的），web页面也是可以无条件执行的。</p>
-<p>远程服务器remoteserver.com根目录下有个remote.js文件代码如下：</p>
-<p>alert(‘我是远程文件’);<br>本地服务器localserver.com下有个jsonp.html页面代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;http://remoteserver.com/remote.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
-<p>毫无疑问，页面将会弹出一个提示窗体，显示跨域调用成功。</p>
-<p>2、现在我们在jsonp.html页面定义一个函数，然后在远程remote.js中传入数据进行调用。</p>
-<p>jsonp.html页面代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">var localHandler = function(data)&#123;</div><div class="line">    alert(&apos;我是本地函数，可以被跨域的remote.js文件调用，远程js带来的数据是：&apos; + data.result);</div><div class="line">&#125;;</div><div class="line">&lt;/script&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;http://remoteserver.com/remote.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
-<p>remote.js文件代码如下：</p>
-<p>localHandler({“result”:”我是远程js带来的数据”});<br>运行之后查看结果，页面成功弹出提示窗口，显示本地函数被跨域的远程js调用成功，并且还接收到了远程js带来的数据。很欣喜，跨域远程获取数据的目的基本实现了，但是又一个问题出现了，我怎么让远程js知道它应该调用的本地函数叫什么名字呢？毕竟是jsonp的服务者都要面对很多服务对象，而这些服务对象各自的本地函数都不相同啊？我们接着往下看。</p>
-<p>3、聪明的开发者很容易想到，只要服务端提供的js脚本是动态生成的就行了呗，这样调用者可以传一个参数过去告诉服务端“我想要一段调用XXX函数的js代码，请你返回给我”，于是服务器就可以按照客户端的需求来生成js脚本并响应了。</p>
-<p>看jsonp.html页面的代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">// 得到航班信息查询结果后的回调函数</div><div class="line">var flightHandler = function(data)&#123;</div><div class="line">    alert(&apos;你查询的航班结果是：票价 &apos; + data.price + &apos; 元，&apos; + &apos;余票 &apos; + data.tickets + &apos; 张。&apos;);</div><div class="line">&#125;;</div><div class="line">// 提供jsonp服务的url地址（不管是什么类型的地址，最终生成的返回值都是一段javascript代码）</div><div class="line">var url = &quot;http://flightQuery.com/jsonp/flightResult.aspx?code=CA1998&amp;callback=flightHandler&quot;;</div><div class="line">// 创建script标签，设置其属性</div><div class="line">var script = document.createElement(&apos;script&apos;);</div><div class="line">script.setAttribute(&apos;src&apos;, url);</div><div class="line">// 把script标签加入head，此时调用开始</div><div class="line">document.getElementsByTagName(&apos;head&apos;)[0].appendChild(script); </div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
-<p>这次的代码变化比较大，不再直接把远程js文件写死，而是编码实现动态查询，而这也正是jsonp客户端实现的核心部分，本例中的重点也就在于如何完成jsonp调用的全过程。</p>
-<p>我们看到调用的url中传递了一个code参数，告诉服务器我要查的是CA1998次航班的信息，而callback参数则告诉服务器，我的本地回调函数叫做flightHandler，所以请把查询结果传入这个函数中进行调用。</p>
-<p>OK，服务器很聪明，这个叫做flightResult.aspx的页面生成了一段这样的代码提供给jsonp.html（服务端的实现这里就不演示了，与你选用的语言无关，说到底就是拼接字符串）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">flightHandler(&#123;</div><div class="line">    &quot;code&quot;: &quot;CA1998&quot;,</div><div class="line">    &quot;price&quot;: 1780,</div><div class="line">    &quot;tickets&quot;: 5</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-<p>我们看到，传递给flightHandler函数的是一个json，它描述了航班的基本信息。运行一下页面，成功弹出提示窗口，jsonp的执行全过程顺利完成！</p>
-<p>4、到这里为止的话，相信你已经能够理解jsonp的客户端实现原理了吧？剩下的就是如何把代码封装一下，以便于与用户界面交互，从而实现多次和重复调用。</p>
-<p>什么？你用的是jQuery，想知道jQuery如何实现jsonp调用？好吧，那我就好人做到底，再给你一段jQuery使用jsonp的代码（我们依然沿用上面那个航班信息查询的例子，假定返回jsonp结果不变）：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"> &lt;script type=&quot;text/javascript&quot; src=jquery.min.js&quot;&gt;&lt;/script&gt;</div><div class="line"> &lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">jQuery(document).ready(function()&#123; </div><div class="line">   $.ajax(&#123;</div><div class="line">        type: &quot;get&quot;,</div><div class="line">        async: false,</div><div class="line">        url: &quot;http://flightQuery.com/jsonp/flightResult.aspx?code=CA1998&quot;,</div><div class="line">        dataType: &quot;jsonp&quot;,</div><div class="line">        jsonp: &quot;callback&quot;,//传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(一般默认为:callback)</div><div class="line">        jsonpCallback:&quot;flightHandler&quot;,//自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名，也可以写&quot;?&quot;，jQuery会自动为你处理数据</div><div class="line">        success: function(json)&#123;</div><div class="line">            alert(&apos;您查询到航班信息：票价： &apos; + json.price + &apos; 元，余票： &apos; + json.tickets + &apos; 张。&apos;);</div><div class="line">        &#125;,</div><div class="line">        error: function()&#123;</div><div class="line">            alert(&apos;fail&apos;);</div><div class="line">        &#125;</div><div class="line">    &#125;);</div><div class="line">&#125;);</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
-<p>是不是有点奇怪？为什么我这次没有写flightHandler这个函数呢？而且竟然也运行成功了！哈哈，这就是jQuery的功劳了，jquery在处理jsonp类型的ajax时（还是忍不住吐槽，虽然jquery也把jsonp归入了ajax，但其实它们真的不是一回事儿），自动帮你生成回调函数并把数据取出来供success属性方法来调用，是不是很爽呀？</p>
-<hr>
-<p>对ajax与jsonp的异同再做一些补充说明：</p>
-<p>1、ajax和jsonp这两种技术在调用方式上“看起来”很像，目的也一样，都是请求一个url，然后把服务器返回的数据进行处理，因此jquery和ext等框架都把jsonp作为ajax的一种形式进行了封装；</p>
-<p>2、但ajax和jsonp其实本质上是不同的东西。ajax的核心是通过XmlHttpRequest获取非本页内容，而jsonp的核心则是动态添加script标签来调用服务器提供的js脚本。</p>
-<p>3、所以说，其实ajax与jsonp的区别不在于是否跨域，ajax通过服务端代理一样可以实现跨域，jsonp本身也不排斥同域的数据的获取。</p>
-<p>4、还有就是，jsonp是一种方式或者说非强制性协议，如同ajax一样，它也不一定非要用json格式来传递数据，如果你愿意，字符串都行，只不过这样不利于用jsonp提供公开服务。</p>
-<p>总而言之，jsonp不是ajax的一个特例，哪怕jquery等巨头把jsonp封装进了ajax，也不能改变着一点！</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2016/10/21/js基础1/" title="js超基础" itemprop="url">js超基础</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="YOYO" target="_blank" itemprop="author">YOYO</a>
-		
-  <p class="article-time">
-    <time datetime="2016-10-21T05:55:42.742Z" itemprop="datePublished"> 發表於 2016-10-21</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>突然发现对js的一些细节知识点记忆几乎遗忘，所以从今天开始我想从新<br>把js基础给过一边，来来巩固一下。</p>
-<blockquote>
-<ul>
-<li>JavaScript和ECMAScript的关系</li>
-<li>程序书写的位置、简单语句</li>
-<li>类型、值、变量</li>
-<li>表达式、运算符</li>
-</ul>
-</blockquote>
-<hr>
-<blockquote>
-<h2 id="一、JavaScript和ECMAScript的关系"><a href="#一、JavaScript和ECMAScript的关系" class="headerlink" title="一、JavaScript和ECMAScript的关系"></a>一、JavaScript和ECMAScript的关系</h2></blockquote>
-<h2 id="对于他们的比较，只要知道一句就好了：简单来说ECMAScript不是一门语言，而是一个标准，是js的一个标准。而javascript是一种轻量级语言。"><a href="#对于他们的比较，只要知道一句就好了：简单来说ECMAScript不是一门语言，而是一个标准，是js的一个标准。而javascript是一种轻量级语言。" class="headerlink" title="对于他们的比较，只要知道一句就好了：简单来说ECMAScript不是一门语言，而是一个标准，是js的一个标准。而javascript是一种轻量级语言。"></a>对于他们的比较，只要知道一句就好了：简单来说ECMAScript不是一门语言，而是一个标准，是js的一个标准。而javascript是一种轻量级语言。</h2><blockquote>
-<h2 id="二、程序书写的位置、简单语句"><a href="#二、程序书写的位置、简单语句" class="headerlink" title="二、程序书写的位置、简单语句"></a>二、程序书写的位置、简单语句</h2></blockquote>
-<h3 id="2-1程序书写的位置"><a href="#2-1程序书写的位置" class="headerlink" title="2.1程序书写的位置"></a><strong><em>2.1程序书写的位置</em></strong></h3><ol>
-<li><p>行内式：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;button onclick=&quot;alert(&apos;你好吗&apos;)&quot;&gt;点击我&lt;/button&gt;</div></pre></td></tr></table></figure>
-<p> 一般情况，单双引号是一样的,但是出现了包裹的情况,所以要严格处理这种情况，我们一般采取的是 外双内单的格式。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;a href=&quot;javascript:void(0);&quot;&gt;&lt;/a&gt;  // 防止跳转</div></pre></td></tr></table></figure>
-</li>
-<li><p>内联式：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;&lt;/script&gt;  //任何一个地方</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>最好放在body标签下面，否则会出现加载顺序的问题。如果要写在head标签里的话需要些一个入口函数：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">      window.onload = function()&#123; </div><div class="line">          alert(&quot;hello&quot;)</div><div class="line">      &#125;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
-<ol>
-<li>外链式：<br>另外建立一个文件，然后以.js为后缀名，里面放你要写的js代码。然后再html里面引入一下代码：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script type=”text/javascript” src=”js的路径.js”&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h3 id="2-2简单语句"><a href="#2-2简单语句" class="headerlink" title="2.2简单语句"></a><strong><em>2.2简单语句</em></strong></h3><ol>
-<li>alert（）语句：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">    &lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">  window.alert(&quot;今天真好&quot;);</div><div class="line">        /* 这里说明一下window是可以省略的 */</div><div class="line">&lt;/script&gt;    /*（内联式）*/</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>这是一个弹出框语句，打开页面后，会有一个弹出框。alert就是英语里面的“警报”的意思，用途就是弹出“警告框”。</p>
-<ol>
-<li>prompt（）语句：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">  &lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">  var a = prompt(&quot;请输入&quot;);</div><div class="line">  alert(a);</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>prompt就是专门用来弹出能够让用户输入的对话框</p>
-<ol>
-<li><p>confirm（）</p>
-<p>comfirm(“你好吗？”);//消息对话框通常用于允许用户做选择的动作<br>消息对话框通常用于允许用户做选择的动作，点击确定，返回true,点击返回，返回false.</p>
-</li>
-<li>console控制台输出</li>
-</ol>
-<p>Console.log() 控制台输出 普通输出语句<br>Console.warn()  控制台警示<br>Console.error() 控制台错误提示<br>Console.info()  一般<br>Console.debug() 除错信息</p>
-<ol>
-<li>document.write()<br>document.write()直接在HTML文档中写入内容并显示</li>
-</ol>
-<hr>
-<blockquote>
-<h2 id="三、-类型、值、变量"><a href="#三、-类型、值、变量" class="headerlink" title="三、 类型、值、变量"></a>三、 类型、值、变量</h2><h3 id="3-1类型"><a href="#3-1类型" class="headerlink" title="3.1类型"></a><strong><em>3.1类型</em></strong></h3><ol>
-<li><ul>
-<li>简单的数据类型：<ul>
-<li>number     数字类型       </li>
-<li>string     字符串类型     </li>
-<li>boolean    布尔类型  </li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-</blockquote>
-<pre><code>* undefined 
-</code></pre><p>在使用var声明变量，但未对其加以初始化时，这个变量的类型就是undefined，且其默认初始化值为undefined。<br>对未声明与初始化的变量，直接使用，那么这个变量的类型也是undefined，但是没有默认初始化值。</p>
-<pre><code>* null
-</code></pre><p>null类型的默认值是null，从逻辑角度讲，是表示一个空对象指针。<br>js高级程序上有讲到，undefined类型是派生自null的，不严格的说二者都是指没有明确赋值的类型，但是细分之后，undefined类型，被用来形容未经初始化的变量，null类型被用来形容空对象指针。<br>所以，如果定义的变量准备在将来用于保存对象（即复杂的数据类型object），那么就该将该变量初始化为null。<br>区分，当一个变量声明后，未初始化，则该值为undefined，如果这个值是为了保存对象，则修改其默认初始化的值，改为null。 所以当检测其类型时，会显示类型为object。</p>
-<p>文／Miss____Du（简书作者）<br>原文链接：<a href="http://www.jianshu.com/p/4841fcc6b4e7" target="_blank" rel="external">http://www.jianshu.com/p/4841fcc6b4e7</a><br>著作权归作者所有，转载请联系作者获得授权，并标注“简书作者”。</p>
-<pre><code>* 复杂的数据类型
- * object   对象
-</code></pre><ol>
-<li>数据类型转换：<h3 id="隐式类型转换"><a href="#隐式类型转换" class="headerlink" title="隐式类型转换"></a>隐式类型转换</h3> 数字–&gt;字符串：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var a = 123;</div><div class="line">a  = a + &quot;&quot;;</div><div class="line">console.log(typeof(a))</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>字符串–&gt;数字<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var a = &quot;123&quot;;</div><div class="line">a  = a - 0 ;</div><div class="line">console.log(typeof(a))</div></pre></td></tr></table></figure></p>
-<h3 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h3><p>数字–&gt;字符串<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var a = 123;</div><div class="line">var b = string(a)</div><div class="line">   console.log(typeof(b))</div><div class="line"> //或用a.toString();</div></pre></td></tr></table></figure></p>
-<p>字符串–&gt;数字<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var a = &quot;123&quot;;</div><div class="line">var b = Number(a)</div><div class="line">   console.log(typeof(b))</div></pre></td></tr></table></figure></p>
-<p>转换成整型：parseInt()；<br>转换成浮点型： parseFloat();</p>
-<h3 id="3-2变量"><a href="#3-2变量" class="headerlink" title="3.2变量"></a><strong><em>3.2变量</em></strong></h3><ol>
-<li>变量的命名规范：<br>只能由字母、数字、下划线、美元符号$构成，且不能以数字开头，并且不能是JavaScript关键字保留字。<br>比如：<br>var a ;<br>var $ab123;</li>
-<li>注意要点，<ul>
-<li>变量用var来定义。只有定义之后，这个变量才能够使用，而且不需要考虑他到底是什么类型的，尽管用var来第一即可。</li>
-<li>后面代码要用到变量的时候一定不要加引号，加引号就变成了字符串了，而不是变量。</li>
-<li>大写字母是可以使用的，并且大小写敏感。也就是说A和a是两个变量。</li>
-<li>变量名不能超过255个字符，一半也不会写那么长。。</li>
-<li>如果在声明时没有写var被认为是全局变量。</li>
-<li>javascript里面声明的变量，会提升至函数顶部。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<blockquote>
-<h2 id="四、语句"><a href="#四、语句" class="headerlink" title="四、语句"></a>四、语句</h2><ul>
-<li>if语句<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">if(表达式)&#123;</div><div class="line">  console.log(我就出去玩)；</div><div class="line">&#125;else&#123;</div><div class="line">  console.log(我就在家写作业); </div><div class="line">  &#125;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-</blockquote>
-<ul>
-<li><p>for循环语句</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">for(var i = 1 ; i &lt;= 100 ; i++)&#123;</div><div class="line">  console.log(i);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-<li><p>switch语句</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">var n = null;</div><div class="line">switch(n)&#123;</div><div class="line">    case 1:</div><div class="line">      执行的代码;</div><div class="line">        break;</div><div class="line">    case 2:</div><div class="line">      执行的代码;</div><div class="line">        break;</div><div class="line">        ......</div><div class="line">    default:</div><div class="line">      执行的代码;</div><div class="line">        break;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
-</li>
-<li><p>while语句</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var i = 1；</div><div class="line">while（i&lt;10）&#123;</div><div class="line">    console.log(i)</div><div class="line">    i ++ ;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-<li><p>Do..while循环语句</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var i = 1；</div><div class="line">do&#123;</div><div class="line"> console.log(i)</div><div class="line">    i ++ ;</div><div class="line">&#125;while(i&lt;10)</div></pre></td></tr></table></figure>
-</li>
-<li><p>break 语句 和 continue语句<br>break语句：它是结束当前整个这个循环体，跳出该循环体；<br>continue语句：它是结束当前的一个循环，后面的内容不执行，跳入本循环的下一个循环。</p>
-</li>
-</ul>
-<blockquote>
-<h2 id="扩展小知识点-序列化和反序列化"><a href="#扩展小知识点-序列化和反序列化" class="headerlink" title="(扩展小知识点)序列化和反序列化"></a>(扩展小知识点)序列化和反序列化</h2><p>主要用于存储对象状态为另一种通用格式，比如存储为二进制、xml、json等等，把对象转换成这种格式就叫序列化，而反序列化通常是从这种格式转换回来。<br>使用序列化主要是因为跨平台和对象存储的需求，因为网络上只允许字符串或者二进制格式，而文件需要使用二进制流格式，如果想把一个内存中的对象存储下来就必须使用序列化转换为xml（字符串）、json（字符串）或二进制（流）</p>
-</blockquote>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2016/10/18/jdk/" title="关于安装jdk后没有javac文件的小结" itemprop="url">关于安装jdk后没有javac文件的小结</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="YOYO" target="_blank" itemprop="author">YOYO</a>
-		
-  <p class="article-time">
-    <time datetime="2016-10-18T05:51:07.582Z" itemprop="datePublished"> 發表於 2016-10-18</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>今天在用ionic的时候遇到了这个让人恶心的问题，我也是没谁了，折腾了一上午的时间，总算解决了，在这里总结一下我通过查看各种资料和自己遇到的问题，希望对大家有帮助。</p>
-<ul>
-<li>第一种情况<br>首先要确保环境变量是否搭建好，有的电脑在安装好后会自动搭建好环境的，但是有的电脑需要自己去搭建，<br>解决方案：在属性—&gt;高级下有个环境变量—-&gt;在系统环境变量path后面加；D:\Program Files\Java\jdk1.8.0_102\bin;JAVA_HOME,是可以不用配置的。classpath是跑项目的时候用到的不重要。</li>
-<li>第二种情况：<br>可能是因为你之前安装过一个不完整的JDK导致的，你又新安装了已个JDK，建议 把你的JAVA_HOME , path清理一下 ,把JDK卸载干净,重新安装, 在系统环境变量path后面加；D:\Program Files\Java\jdk1.8.0_102\bin;  </li>
-<li>第三种情况<br>这是我遇到的令人抓狂的事，JDK和JRE一定不能安装在同一文件夹中，（jdk自带的那个jre除外）否则运行的时候会找不到javac命令。JRE晚于JDK安装，而JRE只是提供Java运行环境，不需要javac编译命令的。JRE安装前你会发现它会自动删除一些无关文件，如果同JDK安装在同一目录下，原本JDK中完好的javac命令就会被删除！！<br>解决方案：重新安装一次JDK 你会发现系统会安装两次文件 第一次的是jdk 第二次的是jre 只要保证你两次安装的目录不是同一个就OK</li>
-</ul>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-
-  <nav id="page-nav" class="clearfix">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next<span></span></a>
+  <nav id="page-nav" class="clearfix unexpand">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next<span></span></a>
   </nav>
 
 </div>
-      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
 <aside class="clearfix">
 
   
@@ -896,7 +224,7 @@
   
 
   <div class="linkslist">
-  <p class="asidetitle">友情鏈接</p>
+  <p class="asidetitle">Links</p>
     <ul>
         
           <li>
@@ -918,12 +246,12 @@
 
 
   <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
 </div>
 
   <div class="weiboshow">
-  <p class="asidetitle">新浪微博</p>
-    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=null&verifier=b3593ceb&dpc=1"></iframe>
+  <p class="asidetitle">Weibo</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=&verifier=b3593ceb&dpc=1"></iframe>
 </div>
 
 
@@ -961,9 +289,9 @@
 		
 
 		<p class="copyright">
-		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2017 
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2018 
 		
-		<a href="/about" target="_blank" title="YOYO">YOYO</a>
+		<a href="/about" target="_blank" title="王媛">王媛</a>
 		
 		
 		</p>
@@ -1072,7 +400,7 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
 	</div>
 	<script src="/js/totop.js"></script>
 
