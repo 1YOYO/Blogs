@@ -4,12 +4,12 @@
 
     
   <url>
-    <loc>https://blog.yoyoyuan.top/2018/04/26/%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%E7%9A%84%E4%BA%94%E7%A7%8D%E6%96%B9%E6%B3%95/</loc>
-    <lastmod>2018-04-26T02:09:11.538Z</lastmod>
+    <loc>https://blog.yoyoyuan.top/2018/04/26/slice.call/</loc>
+    <lastmod>2018-04-26T02:52:38.969Z</lastmod>
     <data>
         <display>
-        <title></title>
-        <pubTime>2018-04-26T02:10:05.670Z</pubTime>
+        <title>([].slice.call(arguments, 1))的理解</title>
+        <pubTime>2018-04-26T02:10:05.654Z</pubTime>
         
          
            
@@ -19,12 +19,12 @@
 
     
   <url>
-    <loc>https://blog.yoyoyuan.top/2018/04/26/slice.call/</loc>
-    <lastmod>2018-04-26T02:01:10.922Z</lastmod>
+    <loc>https://blog.yoyoyuan.top/2018/04/26/%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%E7%9A%84%E4%BA%94%E7%A7%8D%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2018-04-26T02:45:27.305Z</lastmod>
     <data>
         <display>
-        <title></title>
-        <pubTime>2018-04-26T02:10:05.654Z</pubTime>
+        <title>数组去重的五种方法</title>
+        <pubTime>2018-04-26T02:10:05.670Z</pubTime>
         
          
            

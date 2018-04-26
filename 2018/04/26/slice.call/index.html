@@ -4,24 +4,24 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>YOYO&#39;s blog</title>
+    <title>([].slice.call(arguments, 1))的理解 | YOYO&#39;s blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="王媛">
     
 
     
-    <meta name="description" content="([].slice.call(arguments, 1))的理解   [] 是什么？ [].slice是什么？ fn.call()是什么？ arguments是什么？    一. []是什么？12let arr = []                        let arr1 = new Array() 这两者都是创建一个空数组，没有什么不同的。  二. [].slice是什么?它是用来截">
+    <meta name="description" content="[] 是什么？ [].slice是什么？ fn.call()是什么？ arguments是什么？    一. []是什么？12let arr = []                        let arr1 = new Array() 这两者都是创建一个空数组，没有什么不同的。  二. [].slice是什么?它是用来截取数组的. 123var a = [1, 2, 3, 4, 5]">
 <meta property="og:type" content="article">
-<meta property="og:title" content="YOYO&#39;s blog">
+<meta property="og:title" content="([].slice.call(arguments, 1))的理解">
 <meta property="og:url" content="https://blog.yoyoyuan.top/2018/04/26/slice.call/index.html">
 <meta property="og:site_name" content="YOYO&#39;s blog">
-<meta property="og:description" content="([].slice.call(arguments, 1))的理解   [] 是什么？ [].slice是什么？ fn.call()是什么？ arguments是什么？    一. []是什么？12let arr = []                        let arr1 = new Array() 这两者都是创建一个空数组，没有什么不同的。  二. [].slice是什么?它是用来截">
+<meta property="og:description" content="[] 是什么？ [].slice是什么？ fn.call()是什么？ arguments是什么？    一. []是什么？12let arr = []                        let arr1 = new Array() 这两者都是创建一个空数组，没有什么不同的。  二. [].slice是什么?它是用来截取数组的. 123var a = [1, 2, 3, 4, 5]">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-26T02:01:10.922Z">
+<meta property="og:updated_time" content="2018-04-26T02:52:38.969Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="YOYO&#39;s blog">
-<meta name="twitter:description" content="([].slice.call(arguments, 1))的理解   [] 是什么？ [].slice是什么？ fn.call()是什么？ arguments是什么？    一. []是什么？12let arr = []                        let arr1 = new Array() 这两者都是创建一个空数组，没有什么不同的。  二. [].slice是什么?它是用来截">
+<meta name="twitter:title" content="([].slice.call(arguments, 1))的理解">
+<meta name="twitter:description" content="[] 是什么？ [].slice是什么？ fn.call()是什么？ arguments是什么？    一. []是什么？12let arr = []                        let arr1 = new Array() 这两者都是创建一个空数组，没有什么不同的。  二. [].slice是什么?它是用来截取数组的. 123var a = [1, 2, 3, 4, 5]">
 
     
     <link rel="alternative" href="/atom.xml" title="YOYO&#39;s blog" type="application/atom+xml">
@@ -81,7 +81,7 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2018/04/26/slice.call/" title="" itemprop="url"></a>
+      <a href="/2018/04/26/slice.call/" title="([].slice.call(arguments, 1))的理解" itemprop="url">([].slice.call(arguments, 1))的理解</a>
   </h1>
   <p class="article-author">By
        
@@ -97,11 +97,11 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#slice-call-arguments-1-的理解"><span class="toc-number">1.</span> <span class="toc-text">([].slice.call(arguments, 1))的理解</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-是什么？"><span class="toc-number">1.1.</span> <span class="toc-text">一. []是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-slice是什么"><span class="toc-number">1.2.</span> <span class="toc-text">二. [].slice是什么?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#fn-call-是什么？"><span class="toc-number">1.3.</span> <span class="toc-text">fn.call()是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四-arguments是什么？"><span class="toc-number">1.4.</span> <span class="toc-text">四. arguments是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五-来理解-slice-call-arguments-1"><span class="toc-number">1.5.</span> <span class="toc-text">五. 来理解[].slice.call(arguments, 1)</span></a></li></ol></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-是什么？"><span class="toc-number">1.</span> <span class="toc-text">一. []是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-slice是什么"><span class="toc-number">2.</span> <span class="toc-text">二. [].slice是什么?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#fn-call-是什么？"><span class="toc-number">3.</span> <span class="toc-text">fn.call()是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四-arguments是什么？"><span class="toc-number">4.</span> <span class="toc-text">四. arguments是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五-来理解-slice-call-arguments-1"><span class="toc-number">5.</span> <span class="toc-text">五. 来理解[].slice.call(arguments, 1)</span></a></li></ol>
 		
 		</div>
 		
-		<h1 id="slice-call-arguments-1-的理解"><a href="#slice-call-arguments-1-的理解" class="headerlink" title="([].slice.call(arguments, 1))的理解"></a>([].slice.call(arguments, 1))的理解</h1><hr>
+		<hr>
 <blockquote>
 <ul>
 <li>[] 是什么？</li>
@@ -138,7 +138,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="https://blog.yoyoyuan.top/2018/04/26/slice.call/" data-title="YOYO&#39;s blog" data-tsina="" class="share clearfix">
+	  <div data-url="https://blog.yoyoyuan.top/2018/04/26/slice.call/" data-title="([].slice.call(arguments, 1))的理解 | YOYO&#39;s blog" data-tsina="" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -152,10 +152,10 @@
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2018/04/26/数组去重的五种方法/" title="">
+ <a href="/2018/04/26/数组去重的五种方法/" title="数组去重的五种方法">
   <strong>上一篇：</strong><br/>
   <span>
-  (no title)</span>
+  数组去重的五种方法</span>
 </a>
 </div>
 
@@ -178,7 +178,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#slice-call-arguments-1-的理解"><span class="toc-number">1.</span> <span class="toc-text">([].slice.call(arguments, 1))的理解</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-是什么？"><span class="toc-number">1.1.</span> <span class="toc-text">一. []是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-slice是什么"><span class="toc-number">1.2.</span> <span class="toc-text">二. [].slice是什么?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#fn-call-是什么？"><span class="toc-number">1.3.</span> <span class="toc-text">fn.call()是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四-arguments是什么？"><span class="toc-number">1.4.</span> <span class="toc-text">四. arguments是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五-来理解-slice-call-arguments-1"><span class="toc-number">1.5.</span> <span class="toc-text">五. 来理解[].slice.call(arguments, 1)</span></a></li></ol></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-是什么？"><span class="toc-number">1.</span> <span class="toc-text">一. []是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-slice是什么"><span class="toc-number">2.</span> <span class="toc-text">二. [].slice是什么?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#fn-call-是什么？"><span class="toc-number">3.</span> <span class="toc-text">fn.call()是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四-arguments是什么？"><span class="toc-number">4.</span> <span class="toc-text">四. arguments是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五-来理解-slice-call-arguments-1"><span class="toc-number">5.</span> <span class="toc-text">五. 来理解[].slice.call(arguments, 1)</span></a></li></ol>
  
   </div>
 
