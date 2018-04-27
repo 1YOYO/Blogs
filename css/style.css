@@ -118,10 +118,10 @@ a img {
   -webkit-margin-after: 0;
 }
 body {
-  background: url("/img/body.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+  background: #f8c5a4 url("/img/body.png") no-repeat center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
   font-family: "Helvetica Neue", "Helvetica", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
   font-size: 100%;
   color: #817c7c;
@@ -686,7 +686,7 @@ header nav ul li a:hover {
   line-height: 1em;
   padding: 6px 15px;
   border-radius: 15px;
-  background: url("/img/body.jpg");
+  background: #f8c5a4 url("/img/body.png") no-repeat center;
   color: #817c7c;
   text-decoration: none;
 }
