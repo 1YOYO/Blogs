@@ -1,0 +1,490 @@
+
+ <!DOCTYPE HTML>
+<html >
+<head>
+  <meta charset="UTF-8">
+  
+    <title>前端工具小总结 | YOYO&#39;s blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="YOYO">
+    
+
+    
+    <meta name="description" content="今天总结几个前端开发所用到的工具区别，以备后用.主要内容为：
+
+
+npm与bower的区别？
+svn与git的区别？
+分布式和集群？（后台架构的知识）
+gulp与grunt?
+gulp与webpack?
+
+
+一、npm与bower的区别？我认为的npm和bower其实并没有太大的区别，硬要说的话，我是这么理解这两个工具的：
+1.Bower大部分是用来下载前端开发工具，比如CSS、JS插件库等内容进">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端工具小总结">
+<meta property="og:url" content="http://yoursite.com/2016/10/17/tools_contrast/index.html">
+<meta property="og:site_name" content="YOYO's blog">
+<meta property="og:description" content="今天总结几个前端开发所用到的工具区别，以备后用.主要内容为：
+
+
+npm与bower的区别？
+svn与git的区别？
+分布式和集群？（后台架构的知识）
+gulp与grunt?
+gulp与webpack?
+
+
+一、npm与bower的区别？我认为的npm和bower其实并没有太大的区别，硬要说的话，我是这么理解这两个工具的：
+1.Bower大部分是用来下载前端开发工具，比如CSS、JS插件库等内容进">
+<meta property="og:updated_time" content="2016-10-17T05:26:44.105Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="前端工具小总结">
+<meta name="twitter:description" content="今天总结几个前端开发所用到的工具区别，以备后用.主要内容为：
+
+
+npm与bower的区别？
+svn与git的区别？
+分布式和集群？（后台架构的知识）
+gulp与grunt?
+gulp与webpack?
+
+
+一、npm与bower的区别？我认为的npm和bower其实并没有太大的区别，硬要说的话，我是这么理解这两个工具的：
+1.Bower大部分是用来下载前端开发工具，比如CSS、JS插件库等内容进">
+
+    
+    <link rel="alternative" href="/atom.xml" title="YOYO&#39;s blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="YOYO&#39;s blog" title="YOYO&#39;s blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="YOYO&#39;s blog">YOYO&#39;s blog</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:yoursite.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/10/17/tools_contrast/" title="前端工具小总结" itemprop="url">前端工具小总结</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="YOYO" target="_blank" itemprop="author">YOYO</a>
+		
+  <p class="article-time">
+    <time datetime="2016-10-17T05:20:08.158Z" itemprop="datePublished"> 發表於 2016-10-17</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、npm与bower的区别？"><span class="toc-number">1.</span> <span class="toc-text">一、npm与bower的区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、svn与git的区别？"><span class="toc-number">2.</span> <span class="toc-text">二、svn与git的区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、分布式和集群？（后台构架知识）"><span class="toc-number">3.</span> <span class="toc-text">三、分布式和集群？（后台构架知识）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、gulp与grunt"><span class="toc-number">4.</span> <span class="toc-text">四、gulp与grunt?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五、gulp与webpack"><span class="toc-number">5.</span> <span class="toc-text">五、gulp与webpack?</span></a></li></ol>
+		
+		</div>
+		
+		<p>今天总结几个前端开发所用到的工具区别，以备后用.<br>主要内容为：</p>
+<blockquote>
+<ul>
+<li>npm与bower的区别？</li>
+<li>svn与git的区别？</li>
+<li>分布式和集群？（后台架构的知识）</li>
+<li>gulp与grunt?</li>
+<li>gulp与webpack?</li>
+</ul>
+</blockquote>
+<h2 id="一、npm与bower的区别？"><a href="#一、npm与bower的区别？" class="headerlink" title="一、npm与bower的区别？"></a>一、npm与bower的区别？</h2><p>我认为的npm和bower其实并没有太大的区别，硬要说的话，我是这么理解这两个工具的：</p>
+<p>1.Bower大部分是用来下载前端开发工具，比如CSS、JS插件库等内容进行依赖管理，依赖的下载目录结构可以自定义。NPM主要运用于Node.js项目的内部依赖包管理，安装的模块位于项目根目录下的node_modules文件夹内。<br>2.现在看来，npm已基本取代bower，bower已经出局。</p>
+<h2 id="二、svn与git的区别？"><a href="#二、svn与git的区别？" class="headerlink" title="二、svn与git的区别？"></a>二、svn与git的区别？</h2><p>1.git是分布式的，SVN不是。<br>2.git把内容按元数据方式存储，而SVN是按文件<br>3.git下载下来后，在离线状态下可以看到所有的Log版本。而SVN需要联网，而且需要先updata一下，忘记就徒增麻烦了。<br>(git的特点版本控制可以不依赖网络做任何事情，对分支和合并有更好的支持)<br>4.git的内容的完整性要优于SVN:git的内容存储使用的是SHA-1哈希算法(不太熟悉)，但是我知道它能够确保代码内容的完整性，确保在遇到磁盘故障和网络问题时降低对版本库的破坏。</p>
+<h2 id="三、分布式和集群？（后台构架知识）"><a href="#三、分布式和集群？（后台构架知识）" class="headerlink" title="三、分布式和集群？（后台构架知识）"></a>三、分布式和集群？（后台构架知识）</h2><p>1.分布式：一个业务分拆多个子业务，部署在不同的服务器上（比如腾讯QQ是一个总体业务，它可以分出想聊天、视频等等子业务，把这些子业务放在了不同的服务器上，所以每个服务器的业务都不同。来便于维护和管理）<br>2.集群：同一个业务，部署在多个服务器上（比如腾讯QQ的聊天业务，不可能只凡在一个服务器上，否则用户那么多，它自己吃不消，他又将该业务部署在了不同的服务器上，而这些服务器实现的业务都是聊天。缓和服务器压力）</p>
+<h2 id="四、gulp与grunt"><a href="#四、gulp与grunt" class="headerlink" title="四、gulp与grunt?"></a>四、gulp与grunt?</h2><p>1.gulp的语法比grunt语法简洁，用gulp官网的话说，这个叫做“代码优于配置”<br>2.gulp构建项目的时间速度快，通过利用Node.js强大的流，不需要往磁盘写中间文件，可以更快地完成构建。</p>
+<h2 id="五、gulp与webpack"><a href="#五、gulp与webpack" class="headerlink" title="五、gulp与webpack?"></a>五、gulp与webpack?</h2><p>webpack的有点：<br> 1.不用考虑资源位置， webpack 给你做了。<br> 2.不用考虑资源加载方式，异步同步改一下写法就行， webpack 也给你做了。<br> 3.不用考虑 common 资源的整理， webpack 有个 CommonsChunkPlugin 能做。<br>备注：在 webpack 里，你只需要 require 就行了，依赖关系 webpack 帮你处理。而在 gulp 里，你还是需要把所有的 js 或者其他依赖文件用 gulp.src 弄起来。</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2016/10/17/tools_contrast/" data-title="前端工具小总结 | YOYO&#39;s blog" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2016/10/18/jdk/" title="关于安装jdk后没有javac文件的小结">
+  <strong>上一篇：</strong><br/>
+  <span>
+  关于安装jdk后没有javac文件的小结</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2016/10/16/gulp/"  title="gulp搭建">
+ <strong>下一篇：</strong><br/> 
+ <span>gulp搭建
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、npm与bower的区别？"><span class="toc-number">1.</span> <span class="toc-text">一、npm与bower的区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、svn与git的区别？"><span class="toc-number">2.</span> <span class="toc-text">二、svn与git的区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、分布式和集群？（后台构架知识）"><span class="toc-number">3.</span> <span class="toc-text">三、分布式和集群？（后台构架知识）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、gulp与grunt"><span class="toc-number">4.</span> <span class="toc-text">四、gulp与grunt?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五、gulp与webpack"><span class="toc-number">5.</span> <span class="toc-text">五、gulp与webpack?</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+
+
+  
+
+  
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://blog.yoyoyuan.top" target="_blank" title="YOYO&#39;s Blog">YOYO&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=null&verifier=b3593ceb&dpc=1"></iframe>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m YOYO . <br/>
+			This is my blog,believe it or not.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/5239740827" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2017 
+		
+		<a href="/about" target="_blank" title="YOYO">YOYO</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
