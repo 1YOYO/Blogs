@@ -14,7 +14,7 @@
     <meta name="description" content="随笔，小记。。  transclude？嵌入的意思,也就是说你是否需要将你的指令（内部）的元素嵌入到你的（模板）中去，默认为false。如果你需要的话，那么就需要将transclude设置为true。如果将这个值设置为true的话，就要配合angular的ng-transclude指令来进行使用，  代码实现？1.html中的代码12&amp;lt;!--  指令a-transclude 内部含有元素-">
 <meta property="og:type" content="article">
 <meta property="og:title" content="transclude及ng-transclude">
-<meta property="og:url" content="https://blog.yoyoyuan.top/2016/11/05/angularjs中的transclude及ng-transclude指令/index.html">
+<meta property="og:url" content="https://1yoyo.github.io/2016/11/05/angularjs中的transclude及ng-transclude指令/index.html">
 <meta property="og:site_name" content="YOYO&#39;s blog">
 <meta property="og:description" content="随笔，小记。。  transclude？嵌入的意思,也就是说你是否需要将你的指令（内部）的元素嵌入到你的（模板）中去，默认为false。如果你需要的话，那么就需要将transclude设置为true。如果将这个值设置为true的话，就要配合angular的ng-transclude指令来进行使用，  代码实现？1.html中的代码12&amp;lt;!--  指令a-transclude 内部含有元素-">
 <meta property="og:locale" content="default">
@@ -27,13 +27,13 @@
     <link rel="alternative" href="/atom.xml" title="YOYO&#39;s blog" type="application/atom+xml">
     
     
-    <link rel="icon" href="/img/favicon.ico">
+    <link rel="icon" href="/Blogs/img/favicon.ico">
     
     
-    <link rel="apple-touch-icon" href="/img/logo.png">
-    <link rel="apple-touch-icon-precomposed" href="/img/logo.png">
+    <link rel="apple-touch-icon" href="/Blogs/img/logo.png">
+    <link rel="apple-touch-icon-precomposed" href="/Blogs/img/logo.png">
     
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/Blogs/css/style.css">
 </head>
 
   <body>
@@ -42,11 +42,11 @@
 <div>
 		
 			<div id="imglogo">
-				<a href="/"><img src="/img/logo.png" alt="YOYO&#39;s blog" title="YOYO&#39;s blog"/></a>
+				<a href="/Blogs/"><img src="/Blogs/img/logo.png" alt="YOYO&#39;s blog" title="YOYO&#39;s blog"/></a>
 			</div>
 			
 			<div id="textlogo">
-				<h1 class="site-name"><a href="/" title="YOYO&#39;s blog">YOYO&#39;s blog</a></h1>
+				<h1 class="site-name"><a href="/Blogs/" title="YOYO&#39;s blog">YOYO&#39;s blog</a></h1>
 				<h2 class="blog-motto">我的小博客</h2>
 			</div>
 			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
@@ -55,18 +55,18 @@
 				<ul>
 					<ul>
 					 
-						<li><a href="/">主页</a></li>
+						<li><a href="/Blogs/">主页</a></li>
 					
-						<li><a href="/archives">分类</a></li>
+						<li><a href="/Blogs/archives">分类</a></li>
 					
-						<li><a href="/about">简介</a></li>
+						<li><a href="/Blogs/about">简介</a></li>
 					
 					<li>
  					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
 						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
-						<input type="hidden" name="q" value="site:blog.yoyoyuan.top">
+						<input type="hidden" name="q" value="site:1yoyo.github.io">
 					</form>
 					
 					</li>
@@ -81,11 +81,11 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/11/05/angularjs中的transclude及ng-transclude指令/" title="transclude及ng-transclude" itemprop="url">transclude及ng-transclude</a>
+      <a href="/Blogs/2016/11/05/angularjs中的transclude及ng-transclude指令/" title="transclude及ng-transclude" itemprop="url">transclude及ng-transclude</a>
   </h1>
   <p class="article-author">By
        
-		<a href="/about" title="王媛" target="_blank" itemprop="author">王媛</a>
+		<a href="/Blogs/about" title="王媛" target="_blank" itemprop="author">王媛</a>
 		
   <p class="article-time">
     <time datetime="2016-11-05T03:06:52.000Z" itemprop="datePublished"> Published 2016-11-05</time>
@@ -111,7 +111,7 @@
 <p>3.tmpls/breadcrumb.html模板中的代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;ol&gt;</span><br><span class="line">  &lt;li&gt;</span><br><span class="line">  	&lt;a href=&quot;#&quot; ng-transclude&gt;模板1&lt;/a&gt;</span><br><span class="line">  	&lt;a href=&quot;#&quot;&gt;模板2&lt;/a&gt;</span><br><span class="line">  &lt;/li&gt;</span><br><span class="line">&lt;/ol&gt;</span><br></pre></td></tr></table></figure></p>
 <p>备注：<strong><em> 模板由两部分组成，一部分是含有ng-transclude指令的，一部分是不含有这个指令的 </em></strong></p>
 <p><strong><em> 最后的结果是 </em></strong></p>
-<p>(<a href="https://blog.yoyoyuan.top/img/transclude.png">https://blog.yoyoyuan.top/img/transclude.png</a>)</p>
+<p>(<a href="https://blog.yoyoyuan.top/img/transclude.png" target="_blank" rel="noopener">https://blog.yoyoyuan.top/img/transclude.png</a>)</p>
 <hr>
   
 	</div>
@@ -125,7 +125,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="https://blog.yoyoyuan.top/2016/11/05/angularjs中的transclude及ng-transclude指令/" data-title="transclude及ng-transclude | YOYO&#39;s blog" data-tsina="" class="share clearfix">
+	  <div data-url="https://1yoyo.github.io/2016/11/05/angularjs中的transclude及ng-transclude指令/" data-title="transclude及ng-transclude | YOYO&#39;s blog" data-tsina="" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -139,7 +139,7 @@
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2016/11/16/webpack/" title="webpack的搭建">
+ <a href="/Blogs/2016/11/16/webpack/" title="webpack的搭建">
   <strong>上一篇：</strong><br/>
   <span>
   webpack的搭建</span>
@@ -148,7 +148,7 @@
 
 
 <div class="next">
-<a href="/2016/11/05/jq基础2/"  title="js中的集合">
+<a href="/Blogs/2016/11/05/jq基础2/"  title="js中的集合">
  <strong>下一篇：</strong><br/> 
  <span>js中的集合
 </span>
@@ -262,16 +262,16 @@
 		<p class="copyright">
 		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2018 
 		
-		<a href="/about" target="_blank" title="王媛">王媛</a>
+		<a href="/Blogs/about" target="_blank" title="王媛">王媛</a>
 		
 		
 		</p>
 </div>
 </footer>
-    <script src="/js/jquery-2.0.3.min.js"></script>
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
-<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+    <script src="/Blogs/js/jquery-2.0.3.min.js"></script>
+<script src="/Blogs/js/jquery.imagesloaded.min.js"></script>
+<script src="/Blogs/js/gallery.js"></script>
+<script src="/Blogs/js/jquery.qrcode-0.12.0.min.js"></script>
 
 <script type="text/javascript">
 $(document).ready(function(){ 
@@ -409,8 +409,8 @@ $(document).ready(function(){
 
 
 
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<link rel="stylesheet" href="/Blogs/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/Blogs/fancybox/jquery.fancybox.pack.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){ 
   $('.article-content').each(function(i){
@@ -453,9 +453,9 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	<a title="Back to Top"><img src="/Blogs/img/scrollup.png"/></a>
 	</div>
-	<script src="/js/totop.js"></script>
+	<script src="/Blogs/js/totop.js"></script>
 
 <!-- Totop End -->
 

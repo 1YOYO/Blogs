@@ -2,112 +2,119 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.yoyoyuan.top/2018/05/03/vue%E4%B8%ADconfig%E4%B8%AD%E7%9A%84proxyTable%E7%9A%84%E9%85%8D%E7%BD%AE/</loc>
+    <loc>https://1yoyo.github.io/2018/05/28/github%E8%AE%BF%E9%97%AE%E4%BB%93%E5%BA%93%E9%87%8C%E9%A1%B9%E7%9B%AE%E7%9A%84%E7%BD%91%E9%A1%B5/</loc>
+    
+    <lastmod>2018-05-28T03:07:51.781Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://1yoyo.github.io/2018/05/03/vue%E4%B8%ADconfig%E4%B8%AD%E7%9A%84proxyTable%E7%9A%84%E9%85%8D%E7%BD%AE/</loc>
     
     <lastmod>2018-05-03T11:04:44.752Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.yoyoyuan.top/2018/04/26/slice.call/</loc>
+    <loc>https://1yoyo.github.io/2018/04/26/slice.call/</loc>
     
     <lastmod>2018-04-26T02:52:38.969Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.yoyoyuan.top/2018/04/26/%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%E7%9A%84%E4%BA%94%E7%A7%8D%E6%96%B9%E6%B3%95/</loc>
+    <loc>https://1yoyo.github.io/2018/04/26/%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%E7%9A%84%E4%BA%94%E7%A7%8D%E6%96%B9%E6%B3%95/</loc>
     
     <lastmod>2018-04-26T02:45:27.305Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.yoyoyuan.top/2017/09/23/translate/</loc>
+    <loc>https://1yoyo.github.io/2017/09/23/translate/</loc>
     
     <lastmod>2017-09-23T06:55:53.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.yoyoyuan.top/2016/11/16/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6/</loc>
+    <loc>https://1yoyo.github.io/2016/11/16/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6/</loc>
     
     <lastmod>2016-11-16T11:55:53.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.yoyoyuan.top/2016/11/27/vuejs%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</loc>
+    <loc>https://1yoyo.github.io/2016/11/27/vuejs%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</loc>
     
     <lastmod>2016-11-16T11:55:53.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.yoyoyuan.top/2016/11/16/webpack/</loc>
+    <loc>https://1yoyo.github.io/2016/11/16/webpack/</loc>
     
     <lastmod>2016-11-16T10:06:53.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.yoyoyuan.top/2016/11/05/angularjs%E4%B8%AD%E7%9A%84transclude%E5%8F%8Ang-transclude%E6%8C%87%E4%BB%A4/</loc>
+    <loc>https://1yoyo.github.io/2016/11/05/jq%E5%9F%BA%E7%A1%802/</loc>
     
     <lastmod>2016-11-05T03:06:53.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.yoyoyuan.top/2016/11/05/jq%E5%9F%BA%E7%A1%802/</loc>
+    <loc>https://1yoyo.github.io/2016/11/05/angularjs%E4%B8%AD%E7%9A%84transclude%E5%8F%8Ang-transclude%E6%8C%87%E4%BB%A4/</loc>
     
     <lastmod>2016-11-05T03:06:53.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.yoyoyuan.top/2016/10/28/gulp/</loc>
+    <loc>https://1yoyo.github.io/2016/10/28/gulp/</loc>
     
     <lastmod>2016-10-28T05:57:53.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.yoyoyuan.top/2016/10/28/%E9%94%AE%E7%9B%98%E4%BA%8B%E4%BB%B6/</loc>
+    <loc>https://1yoyo.github.io/2016/10/28/%E9%94%AE%E7%9B%98%E4%BA%8B%E4%BB%B6/</loc>
     
     <lastmod>2016-10-28T04:57:53.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.yoyoyuan.top/2016/10/28/jsonp/</loc>
+    <loc>https://1yoyo.github.io/2016/10/28/jsonp/</loc>
     
     <lastmod>2016-10-28T04:57:53.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.yoyoyuan.top/2016/10/26/js%E5%9F%BA%E7%A1%801/</loc>
+    <loc>https://1yoyo.github.io/2016/10/26/js%E5%9F%BA%E7%A1%801/</loc>
     
     <lastmod>2016-10-26T06:57:53.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.yoyoyuan.top/2016/10/18/jdk/</loc>
+    <loc>https://1yoyo.github.io/2016/10/18/jdk/</loc>
     
     <lastmod>2016-10-18T05:58:53.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.yoyoyuan.top/2016/10/17/tools_contrast/</loc>
+    <loc>https://1yoyo.github.io/2016/10/17/tools_contrast/</loc>
     
     <lastmod>2016-10-17T06:25:52.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.yoyoyuan.top/2016/10/08/hello-world/</loc>
+    <loc>https://1yoyo.github.io/2016/10/08/hello-world/</loc>
     
     <lastmod>2016-10-08T06:25:52.000Z</lastmod>
     
