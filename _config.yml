@@ -13,7 +13,11 @@ timezone:
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://www.yoyoga.ga/
+<<<<<<< HEAD
 root: /
+=======
+root: /blogs/
+>>>>>>> e2e3dcf89f0069669e0e17bc6283f019d3bd238d
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
