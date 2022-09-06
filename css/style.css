@@ -118,10 +118,7 @@ a img {
   -webkit-margin-after: 0;
 }
 body {
-  background: #f8c5a4 url("/img/body.png") no-repeat center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  background-size: contain;
+  background: #ddd;
   font-family: "Helvetica Neue", "Helvetica", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
   font-size: 100%;
   color: #817c7c;
@@ -395,7 +392,7 @@ body >header {
   width: 100%;
   -webkit-box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
   box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
-  background: url("../img/banner.jpg") center #6aad93;
+  background: url("../") center #2ca6cb;
   color: #fff;
   padding: 1em 0 0.8em;
 }
@@ -549,7 +546,7 @@ header nav ul li a {
   }
 }
 header nav ul li a:hover {
-  background: #478a70;
+  background: #1b7f9e;
   color: #e9cd4c;
 }
 .shownav {
@@ -623,7 +620,7 @@ header nav ul li a:hover {
   }
 }
 #main section.post {
-  background: rgba(255,255,255,0.65);
+  background: #fafafa;
   margin-bottom: 0.125em;
 }
 #main section.post a {
@@ -642,10 +639,10 @@ header nav ul li a:hover {
   }
 }
 #main section.post a:hover {
-  border-left: 0.5em solid #6aad93;
+  border-left: 0.5em solid #2ca6cb;
 }
 #main section.post a h1 {
-  color: #6aad93;
+  color: #2ca6cb;
   line-height: 2;
 }
 #main section.post a p {
@@ -658,7 +655,7 @@ header nav ul li a:hover {
   font-size: 0.9em;
 }
 #main article.post-expand {
-  background: rgba(255,255,255,0.65);
+  background: #fafafa;
   margin-bottom: 3.5em;
 }
 #main article.post-expand .img-logo {
@@ -686,12 +683,12 @@ header nav ul li a:hover {
   line-height: 1em;
   padding: 6px 15px;
   border-radius: 15px;
-  background: #f8c5a4 url("/img/body.png") no-repeat center;
+  background: #ddd;
   color: #817c7c;
   text-decoration: none;
 }
 #main article.post-expand .article-more-link a:hover {
-  background: #6aad93;
+  background: #2ca6cb;
   color: #fff;
   text-decoration: none;
 }
@@ -711,11 +708,10 @@ header nav ul li a:hover {
   border-left: 0.5em solid #ccc;
 }
 .unexpand .prev:hover {
-  border-left: 0.5em solid #6aad93;
+  border-left: 0.5em solid #2ca6cb;
 }
 #page-nav {
-  background: rgba(255,255,255,0.65);
-  border-radius: 8px;
+  background: #fafafa;
   text-align: center;
   overflow: hidden;
 }
@@ -724,11 +720,11 @@ header nav ul li a:hover {
   padding: 0.5em 1em;
 }
 #page-nav a {
-  color: #6aad93;
+  color: #2ca6cb;
 }
 #page-nav a:hover {
   background: #ccc;
-  color: #6aad93;
+  color: #2ca6cb;
 }
 #page-nav .prev {
   float: left;
@@ -769,7 +765,7 @@ header nav ul li a:hover {
   font-weight: bold;
 }
 #page-nav .space {
-  color: #6aad93;
+  color: #2ca6cb;
 }
 /* page layout */
 @media only screen and (min-width: 1024px) {
@@ -800,7 +796,7 @@ header nav ul li a:hover {
 .archive-title {
   margin: 1em 0;
   padding: 2em;
-  background: rgba(255,255,255,0.65);
+  background: #fafafa;
   border-left: 0.5em solid #ccc;
 }
 @media only screen and (min-width: 1024px) {
@@ -813,11 +809,11 @@ header nav ul li a:hover {
 }
 .archive-title h2 {
   width: 90%;
-  color: #6aad93;
+  color: #2ca6cb;
   font-size: 120%;
 }
 .archive-title a {
-  color: #6aad93;
+  color: #2ca6cb;
   -webkit-transition: color 0.5s;
   -moz-transition: color 0.5s;
   -o-transition: color 0.5s;
@@ -825,7 +821,7 @@ header nav ul li a:hover {
   transition: color 0.5s;
 }
 .archive-title a:hover {
-  color: #6aad93;
+  color: #2ca6cb;
   -webkit-transition: color 0.5s;
   -moz-transition: color 0.5s;
   -o-transition: color 0.5s;
@@ -878,14 +874,13 @@ header nav ul li a:hover {
 .page,
 .link,
 .photo {
-  background: rgba(255,255,255,0.65);
-  border-radius: 8px;
+  background: #fafafa;
 }
 .post a,
 .page a,
 .link a,
 .photo a {
-  color: #6aad93;
+  color: #2ca6cb;
 }
 .post a:hover,
 .page a:hover,
@@ -906,7 +901,7 @@ article header.article-info >h1 {
   word-break: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  border-left: 5px solid #6aad93;
+  border-left: 5px solid #2ca6cb;
 }
 @media only screen and (min-width: 1024px) {
   article header.article-info >h1 {
@@ -1021,7 +1016,7 @@ article .article-content abbr {
   border-bottom: 1px dotted;
 }
 article .article-content blockquote {
-  border-left: 0.2em solid #6aad93;
+  border-left: 0.2em solid #2ca6cb;
   margin: 0.65em 0 0.65em 1%;
   padding-left: 1%;
   line-height: 1.5;
@@ -1029,7 +1024,7 @@ article .article-content blockquote {
   color: #808080;
 }
 article .article-content blockquote footer {
-  background: rgba(255,255,255,0.65);
+  background: #fafafa;
   padding: 0;
   margin: 0;
   font-size: 80%;
@@ -1069,9 +1064,9 @@ article .article-content em code,
 article .article-content table th>code,
 article .article-content table td>code {
   font-family: Monaco, Menlo, Consolas, Courier New, monospace;
-  background: #fff;
+  background: #eee;
   color: #d14;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #d6d6d6;
   padding: 0 5px;
   margin: 0 2px;
   font-size: 90%;
@@ -1184,7 +1179,7 @@ article .article-content .right {
   float: right;
 }
 footer.article-footer {
-  background: rgba(255,255,255,0.65);
+  background: #fafafa;
   padding: 0 4%;
   margin: 0;
   border-top: 1px solid #dbdbdb;
@@ -1330,7 +1325,7 @@ footer.article-footer {
 }
 .comments-count-link:hover {
   color: #fff !important;
-  background: #6aad93;
+  background: #2ca6cb;
 }
 .article-tags,
 .article-categories {
@@ -1380,7 +1375,7 @@ footer.article-footer {
 }
 .article-tags a:hover {
   color: #fff;
-  background: #6aad93;
+  background: #2ca6cb;
 }
 .article-categories {
   color: #d6d6d6;
@@ -1399,7 +1394,7 @@ footer.article-footer {
 }
 .article-category-link:hover {
   color: #fff !important;
-  background: #6aad93;
+  background: #2ca6cb;
 }
 .article-nav {
   padding: 0 10%;
@@ -1419,7 +1414,7 @@ footer.article-footer {
 }
 .article-nav .prev a:hover,
 .article-nav .next a:hover {
-  background: #6aad93;
+  background: #2ca6cb;
   color: #fff;
 }
 .article-nav .prev {
@@ -1482,7 +1477,7 @@ section.comment {
   margin: 1em 0;
 }
 .toc-article {
-  background: #fff;
+  background: #eee;
   margin: 1.6em 0 0 2em;
   padding: 1em;
   -webkit-border-radius: 4px;
@@ -1557,7 +1552,7 @@ section.comment {
   transition: color 1s ease-out;
 }
 #toc.toc-aside a:hover {
-  color: #6aad93;
+  color: #2ca6cb;
   -webkit-transition: color 0.3s ease-out;
   -moz-transition: color 0.3s ease-out;
   -o-transition: color 0.3s ease-out;
@@ -1565,7 +1560,7 @@ section.comment {
   transition: color 0.3s ease-out;
 }
 .active {
-  color: #6aad93 !important;
+  color: #2ca6cb !important;
 }
 .openaside {
   display: none;
@@ -1578,7 +1573,7 @@ section.comment {
   color: #fff;
   border: 1px solid #fff;
   border-radius: 5px;
-  background: #6aad93;
+  background: #2ca6cb;
   padding: 0.2em 0.55em;
 }
 .openaside a::before {
@@ -1591,10 +1586,10 @@ section.comment {
   display: none;
 }
 .closeaside a {
-  color: #6aad93;
+  color: #2ca6cb;
 }
 .closeaside a:hover {
-  color: #6aad93;
+  color: #2ca6cb;
 }
 .closeaside a::before {
   font-family: "FontAwesome";
@@ -1611,8 +1606,7 @@ section.comment {
   }
 }
 #asidepart {
-  background: rgba(255,255,255,0.65);
-  border-radius: 8px;
+  background: #fafafa;
   margin: 1em 0 0;
   padding: 0.5em 2% 1em;
 }
@@ -1626,15 +1620,15 @@ section.comment {
 }
 .asidetitle {
   font-size: 1.1em;
-  color: #6aad93;
+  color: #2ca6cb;
   padding: 0 0 0.3125em 0;
   border-bottom: 0.1875em solid #ccc;
 }
 .asidetitle a {
-  color: #6aad93;
+  color: #2ca6cb;
 }
 .asidetitle a:hover {
-  color: #6aad93;
+  color: #2ca6cb;
   -webkit-transition: color 0.5s;
   -moz-transition: color 0.5s;
   -o-transition: color 0.5s;
@@ -1663,7 +1657,7 @@ section.comment {
   padding: 0.5em 5%;
 }
 .categorieslist li a:hover {
-  color: #6aad93;
+  color: #2ca6cb;
 }
 .tagslist {
   margin: 1em 0 0;
@@ -1695,11 +1689,11 @@ section.comment {
   background: #dbdbdb;
 }
 .tagslist ul li a:hover {
-  color: #6aad93;
+  color: #2ca6cb;
   background: #e6e6e6;
 }
 .rsspart {
-  background: #6aad93;
+  background: #2ca6cb;
   width: 100%;
 }
 @media only screen and (min-width: 768px) {
@@ -1723,8 +1717,8 @@ section.comment {
   text-align: center;
 }
 .rsspart a:hover {
-  color: #6aad93;
-  background: rgba(255,255,255,0.65);
+  color: #2ca6cb;
+  background: #fafafa;
 }
 .rsspart a::before {
   font-family: "FontAwesome";
@@ -1751,7 +1745,7 @@ section.comment {
   padding: 0.5em;
 }
 .archiveslist li a:hover {
-  color: #6aad93;
+  color: #2ca6cb;
   -webkit-transition: color 0.25s;
   -moz-transition: color 0.25s;
   -o-transition: color 0.25s;
@@ -1799,7 +1793,7 @@ section.comment {
   float: left;
 }
 .tagcloudlist .tagcloudlist a:hover {
-  color: #6aad93;
+  color: #2ca6cb;
   -webkit-transition: color 0.25s;
   -moz-transition: color 0.25s;
   -o-transition: color 0.25s;
@@ -1833,7 +1827,7 @@ section.comment {
   padding: 0 3%;
 }
 .linkslist ul a:hover {
-  color: #6aad93;
+  color: #2ca6cb;
   -webkit-transition: color 0.25s;
   -moz-transition: color 0.25s;
   -o-transition: color 0.25s;
@@ -1902,7 +1896,7 @@ section.comment {
 }
 footer {
   margin-top: 1em;
-  background: rgba(30,30,30,0.8);
+  background: #1f1f1f;
   padding: 0 2% 0.5em;
 }
 #footer {
@@ -2016,7 +2010,7 @@ footer {
   }
 }
 .social-font a:hover:before {
-  color: #6aad93;
+  color: #2ca6cb;
 }
 .icon-weibo:before,
 .icon-github:before,
@@ -2080,10 +2074,10 @@ footer {
   }
 }
 .copyright a {
-  color: #6aad93;
+  color: #2ca6cb;
 }
 .copyright a:hover {
-  color: #6aad93;
+  color: #2ca6cb;
   text-decoration: underline;
 }
 .cc-license {
@@ -2108,7 +2102,7 @@ footer {
 .article-content pre,
 .article-content .highlight,
 .article-content .highlight pre {
-  background: #fff;
+  background: #eee;
   margin: 0.5em 0;
   padding: 0.5em 2%;
   color: #4d4d4c;
@@ -2191,7 +2185,7 @@ footer {
 }
 .article-content .gist {
   margin: 0.5em 0;
-  background: #fff;
+  background: #eee;
   padding: 1em 2%;
   -webkit-border-radius: 0.35em;
   border-radius: 0.35em;
@@ -2217,10 +2211,10 @@ footer {
   margin: 0;
   padding: 0;
   border: none;
-  background: #fff;
+  background: #eee;
 }
 .article-content .gist .gist-file .gist-meta {
-  background: #fff;
+  background: #eee;
   color: #8e908c;
   font: 0.85em "Georgia", serif;
   text-shadow: 0 0;
@@ -2228,11 +2222,11 @@ footer {
   margin-top: 1em;
 }
 .article-content .gist .gist-file .gist-meta a {
-  color: #6aad93;
+  color: #2ca6cb;
   font-weight: normal;
 }
 .article-content .gist .gist-file .gist-meta a:hover {
-  color: #6aad93;
+  color: #2ca6cb;
 }
 pre .comment,
 pre .title {
